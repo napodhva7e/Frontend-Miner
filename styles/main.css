@@ -1,0 +1,62 @@
+:root {
+  --Montserrat-UI: "Montserrat", sans-serif;
+
+  --accent-dark-1c: #1c1c1c;
+  --accent-dark-1e: #1e1e1e;
+  --accent-light: #ffcd00;
+  --accent-title-light: #eaecef;
+  --accent-text-light: #cfcfcf;
+  --item-order-btn: #2ebd85;
+}
+
+body {
+  font-family: var(--Montserrat-UI);
+  background-color: #fefcfe;
+  color: var(--accent-dark);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+.header {
+  background-color: var(--accent-dark-1c);
+}
+.container {
+  width: 100%;
+  max-width: 1124px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.header--wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 35px;
+  padding-bottom: 33px;
+  gap: 72px;
+}
+.logo {
+  display: block;
+  width: 85px;
+  height: 18px;
+  background-image: url(../images/logo.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.nav {
+  flex-grow: 1;
+  gap: 27px;
+  display: flex;
+}
+.header-nav {
+}
+
+.nav--link {
+  line-height: 150%;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--accent-title-light);
+  text-transform: uppercase;
+}
