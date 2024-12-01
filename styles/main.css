@@ -11,7 +11,7 @@
 
 body {
   font-family: var(--Montserrat-UI);
-  background-color: #fefcfe;
+  background-color: var(--accent-dark-1e);
   color: var(--accent-dark);
 }
 
@@ -23,9 +23,16 @@ a {
 .header {
   background-color: var(--accent-dark-1c);
 }
-.container {
+.container-header {
   width: 100%;
   max-width: 1124px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  max-width: 830px;
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: border-box;
@@ -49,6 +56,7 @@ a {
   flex-grow: 1;
   gap: 27px;
   display: flex;
+  height: 24px;
 }
 .header-nav {
 }
@@ -59,4 +67,256 @@ a {
   font-weight: 400;
   color: var(--accent-title-light);
   text-transform: uppercase;
+  transition: 0.4s ease;
+}
+.nav--link:hover {
+  border-bottom: 1px solid var(--accent-light);
+}
+
+/* HERO */
+
+.hero {
+  margin-top: 200px;
+}
+
+.breadcumbs {
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.breadcumbs h1 {
+  font-size: 44px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--accent-title-light);
+  text-transform: uppercase;
+}
+.breadcumbs h1 > span {
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 205, 0, 0.5) 0%,
+    rgba(255, 205, 0, 1) 30%,
+    rgba(255, 205, 0, 1) 80%,
+    rgba(255, 205, 0, 0.5) 100%
+  );
+}
+.breadcumbs p {
+  font-size: 17px;
+  color: var(--accent-light);
+  margin-bottom: 34px;
+  margin-top: 8px;
+}
+.breadcumbs--link-box {
+  display: flex;
+  gap: 172px;
+  justify-content: center;
+}
+
+.breadcumbs--link-box a {
+  color: var(--accent-dark-1e);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 13px 42px;
+  background-color: var(--accent-light);
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+.breadcumbs--link-box a:hover {
+  color: var(--accent-title-light);
+  background-color: transparent;
+  outline: 1px solid var(--accent-light);
+}
+
+/* ADVANTAGES */
+
+.advantages {
+  margin-top: 190px;
+}
+
+.advantages--wrapper {
+  position: relative;
+}
+.advantages--bgi {
+  display: block;
+  width: 1075px;
+  height: 275px;
+  position: absolute;
+  background-image: url(../images/background-image/преимущества-miner.png);
+  top: -150px;
+  left: -165px;
+}
+.h3-info-title {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--accent-light);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+.advantages-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 223px);
+  gap: 22px;
+  margin-top: 40px;
+}
+.advantages-box--item {
+  border: 1px solid #373737;
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s ease;
+}
+.advantages-box--item:hover {
+  border: 1px solid var(--accent-text-light);
+}
+.advantages-icon {
+  margin-top: 8px;
+  width: 94px;
+  height: 94px;
+}
+.advantages-box--item h5 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--accent-title-light);
+  margin-top: 9px;
+  margin-bottom: 10px;
+}
+.advantages-box--item p {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--accent-text-light);
+  margin: 0 12px;
+  line-height: 160%;
+}
+
+/* MAIN */
+.main {
+  margin-top: 160px;
+}
+.container {
+}
+.main--wrapper {
+  position: relative;
+}
+.main--bgi {
+  display: block;
+  width: 1075px;
+  height: 275px;
+  position: absolute;
+  background-image: url(../images/background-image/оборудование-для-майнинга.png);
+  top: -150px;
+  left: -165px;
+}
+.main-info--box {
+}
+.h3-info-title {
+}
+.h2-info-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--accent-title-light);
+  max-width: 580px;
+  margin: 0;
+  margin-top: 32px;
+}
+.p-info- {
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--accent-text-light);
+  margin: 0;
+  letter-spacing: 0.8px;
+  line-height: 1.55vw;
+  margin-top: 20px;
+}
+.main-box {
+  margin-top: 86px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 400px);
+  gap: 90px 107px;
+}
+.main-box--item {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-item--specifications {
+  position: absolute;
+  right: -37px;
+  top: 0;
+}
+.specifitations--time {
+  color: var(--accent-text-light);
+  font-size: 19px;
+  font-weight: 400;
+  padding: 12px 37px 7px 56px;
+  background: linear-gradient(
+    90deg,
+    rgba(46, 189, 133, 0.3) 0%,
+    rgba(46, 189, 133, 1) 21%
+  );
+  margin: 0;
+}
+.specifications--power {
+  color: var(--accent-dark-1e);
+  font-size: 19px;
+  font-weight: 400;
+  padding: 12px 37px 7px 56px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 205, 0, 0.3) 0%,
+    rgba(255, 205, 0, 1) 21%
+  );
+  margin: 0;
+  margin-top: 13px;
+}
+.main-item--img {
+  width: 212px;
+  height: 235px;
+}
+.main-item--name {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--accent-light);
+  margin-top: 14px;
+}
+.main-item--price {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--accent-title-light);
+  margin: 4px 0;
+}
+.main-item-info {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--accent-text-light);
+}
+
+.btn-primary {
+  color: var(--accent-title-light);
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 15px;
+  padding: 18px 79px;
+  background-color: var(--item-order-btn);
+  border: none;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  outline: 1px solid var(--item-order-btn);
+  background-color: transparent;
 }
