@@ -23,26 +23,30 @@ a {
 .header {
   background-color: var(--accent-dark-1c);
 }
-.container-header {
+.container {
   width: 100%;
-  max-width: 1124px;
+  max-width: 1150px;
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: border-box;
 }
-.container {
+/* .container {
   width: 100%;
   max-width: 830px;
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: border-box;
-}
+} */
 .header--wrapper {
   display: flex;
   align-items: center;
   padding-top: 35px;
   padding-bottom: 33px;
-  gap: 72px;
+  gap: 35px;
+  justify-content: space-between;
+}
+.burger-menu {
+  display: none;
 }
 .logo {
   display: block;
@@ -56,14 +60,14 @@ a {
   flex-grow: 1;
   gap: 27px;
   display: flex;
-  height: 24px;
+  height: 23px;
 }
 .header-nav {
 }
 
 .nav--link {
   line-height: 150%;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   color: var(--accent-title-light);
   text-transform: uppercase;
@@ -71,6 +75,13 @@ a {
 }
 .nav--link:hover {
   border-bottom: 1px solid var(--accent-light);
+}
+.language-popUp-menu {
+  width: 50px;
+  height: 40px;
+  background-image: url(../images/language-icons/Глобус.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /* HERO */
@@ -82,11 +93,10 @@ a {
 .breadcumbs {
   text-align: center;
   width: 100%;
-  max-width: 800px;
   margin: 0 auto;
 }
 .breadcumbs h1 {
-  font-size: 44px;
+  font-size: clamp(44px, 5vw, 60px);
   font-weight: 700;
   margin: 0;
   color: var(--accent-title-light);
@@ -104,7 +114,7 @@ a {
   );
 }
 .breadcumbs p {
-  font-size: 17px;
+  font-size: clamp(16px, 2vw, 24px);
   color: var(--accent-light);
   margin-bottom: 34px;
   margin-top: 8px;
@@ -141,15 +151,16 @@ a {
 }
 .advantages--bgi {
   display: block;
-  width: 1075px;
+  width: 100%;
+  max-width: 1075px;
   height: 275px;
   position: absolute;
   background-image: url(../images/background-image/преимущества-miner.png);
   top: -150px;
-  left: -165px;
+  left: 0;
 }
 .h3-info-title {
-  font-size: 17px;
+  font-size: clamp(16px, 2vw, 24px);
   font-weight: 400;
   color: var(--accent-light);
   margin: 0;
@@ -159,7 +170,7 @@ a {
 .advantages-box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 223px);
+  grid-template-rows: repeat(2, 300px);
   gap: 22px;
   margin-top: 40px;
 }
@@ -175,23 +186,60 @@ a {
 .advantages-box--item:hover {
   border: 1px solid var(--accent-text-light);
 }
-.advantages-icon {
-  margin-top: 8px;
-  width: 94px;
-  height: 94px;
+.advantages-box-icon {
+  width: 150px;
 }
+.advantages-icon {
+  margin-top: 15px;
+  width: 100%;
+  height: auto;
+}
+.advantages-box
+  > .advantages-box--item:first-child
+  > .advantages-box-icon
+  > .advantages-icon {
+  background-image: url(../images/advantages-icon/Надежность@4x2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.advantages-box
+  > .advantages-box--item:nth-child(2)
+  > .advantages-box-icon
+  > .advantages-icon {
+  background-image: url(../images/advantages-icon/Умный\ подход@4x1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 20px;
+}
+.advantages-box
+  > .advantages-box--item:nth-child(3)
+  > .advantages-box-icon
+  > .advantages-icon {
+  background-image: url(../images/advantages-icon/Гибкость@4x1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.advantages-box
+  > .advantages-box--item:nth-child(4)
+  > .advantages-box-icon
+  > .advantages-icon {
+  background-image: url(../images/advantages-icon/Лучшие\ предложения@4x1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .advantages-box--item h5 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   color: var(--accent-title-light);
-  margin-top: 9px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .advantages-box--item p {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   color: var(--accent-text-light);
-  margin: 0 12px;
+  margin: 0 15px;
   line-height: 160%;
 }
 
@@ -206,27 +254,28 @@ a {
 }
 .main--bgi {
   display: block;
-  width: 1075px;
+  width: 100%;
+  max-width: 1075px;
   height: 275px;
   position: absolute;
   background-image: url(../images/background-image/оборудование-для-майнинга.png);
   top: -150px;
-  left: -165px;
+  left: 0;
 }
 .main-info--box {
 }
 .h3-info-title {
 }
 .h2-info-title {
-  font-size: 30px;
+  font-size: clamp(32px, 3vw, 40px);
   font-weight: 700;
   color: var(--accent-title-light);
-  max-width: 580px;
+  max-width: 800px;
   margin: 0;
   margin-top: 32px;
 }
-.p-info- {
-  font-size: 22px;
+.p-info {
+  font-size: clamp(16px, 2vw, 24px);
   font-weight: 300;
   color: var(--accent-text-light);
   margin: 0;
@@ -238,8 +287,8 @@ a {
   margin-top: 86px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 400px);
-  gap: 90px 107px;
+  grid-template-rows: repeat(3, 460px);
+  gap: 80px 100px;
 }
 .main-box--item {
   position: relative;
@@ -250,13 +299,13 @@ a {
 }
 .main-item--specifications {
   position: absolute;
-  right: -37px;
+  right: 0;
   top: 0;
+  font-size: 22px;
+  font-weight: 400;
 }
 .specifitations--time {
   color: var(--accent-text-light);
-  font-size: 19px;
-  font-weight: 400;
   padding: 12px 37px 7px 56px;
   background: linear-gradient(
     90deg,
@@ -267,8 +316,6 @@ a {
 }
 .specifications--power {
   color: var(--accent-dark-1e);
-  font-size: 19px;
-  font-weight: 400;
   padding: 12px 37px 7px 56px;
   background: linear-gradient(
     90deg,
@@ -279,26 +326,26 @@ a {
   margin-top: 13px;
 }
 .main-item--img {
-  width: 212px;
-  height: 235px;
+  width: 220px;
+  height: 240px;
 }
 .main-item--name {
   margin: 0;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 400;
   color: var(--accent-light);
-  margin-top: 14px;
+  margin-top: 15px;
 }
 .main-item--price {
   margin: 0;
-  font-size: 25px;
+  font-size: 28px;
   font-weight: 600;
   color: var(--accent-title-light);
-  margin: 4px 0;
+  margin: 10px 0;
 }
 .main-item-info {
   margin: 0;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   font-style: italic;
   color: var(--accent-text-light);
@@ -306,7 +353,7 @@ a {
 
 .btn-primary {
   color: var(--accent-title-light);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   margin-top: 15px;
   padding: 18px 79px;
@@ -319,4 +366,321 @@ a {
 .btn-primary:hover {
   outline: 1px solid var(--item-order-btn);
   background-color: transparent;
+}
+
+/* RELEVANT */
+.relevant-system {
+  margin-top: 64px;
+  background-color: var(--accent-dark-1c);
+}
+.relevant-box--title {
+  color: var(--accent-title-light);
+  text-align: center;
+  padding: 25px 0;
+  border-top: 1px solid var(--item-order-btn);
+  border-bottom: 1px solid var(--item-order-btn);
+  background-color: rgba(41, 41, 41, 0.4);
+}
+.relevant-box--title h1 {
+  margin: 0;
+  font-size: clamp(24px, 2vw, 32px);
+  font-weight: 500;
+}
+.container {
+}
+.relevant-system--wrapper {
+}
+.relevant-box--item {
+  margin-top: 50px;
+}
+.relevant-item--specifications {
+  left: 270px;
+  right: unset;
+}
+.relevant-time {
+}
+.relevant-item--img {
+  width: auto;
+  height: auto;
+}
+
+.relevant-item--name {
+  font-size: clamp(24px, 2vw, 32px);
+  color: var(--accent-title-light);
+}
+
+.relevant-item--price {
+  font-size: clamp(24px, 2vw, 32px);
+  color: var(--accent-light);
+}
+
+.relevant-item-info {
+}
+
+.relevant-btn-primary {
+  margin-top: 18px;
+  margin-bottom: 40px;
+}
+
+/* RATE */
+
+.rate {
+  margin-top: 190px;
+}
+
+.container {
+}
+.rate--wrapper {
+  position: relative;
+}
+.rate--bgi {
+  display: block;
+  width: 100%;
+  max-width: 1075px;
+  height: 275px;
+  position: absolute;
+  background-image: url(../images/background-image/тарифы-на-электроэнергию.png);
+  top: -150px;
+  left: 0;
+}
+.rate-box {
+  margin-left: 160px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  display: grid;
+  grid-template-columns: 400px 487px;
+  grid-template-rows: repeat(4, 70px);
+  grid-template-areas: "a d" "b e" "c f" "g h";
+}
+.rate-box--item {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #373737;
+  text-align: center;
+}
+
+.rate-box > .rate-box--item:nth-child(1) {
+  grid-area: a;
+  border-right: 1px solid #373737;
+}
+.rate-box > .rate-box--item:nth-child(2) {
+  grid-area: b;
+  border-right: 1px solid #373737;
+}
+.rate-box > .rate-box--item:nth-child(3) {
+  grid-area: c;
+  border-right: 1px solid #373737;
+}
+.rate-box > .rate-box--item:nth-child(4) {
+  grid-area: d;
+  text-align: right;
+  padding-right: 80px;
+}
+.rate-box > .rate-box--item:nth-child(5) {
+  grid-area: e;
+  text-align: right;
+  padding-right: 80px;
+}
+.rate-box > .rate-box--item:nth-child(6) {
+  grid-area: f;
+  text-align: right;
+  padding-right: 80px;
+}
+.rate-box > .rate-box--item:nth-child(7) {
+  grid-area: g;
+  border-bottom: none;
+  border-right: 1px solid #373737;
+}
+.rate-box > .rate-box--item:nth-child(8) {
+  grid-area: h;
+  border-bottom: none;
+}
+.rate-box--item p {
+  color: var(--accent-title-light);
+  font-size: 24px;
+}
+
+.rate-btn--calc {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  background-color: var(--accent-light);
+  color: var(--accent-dark-1e);
+  font-weight: 600;
+}
+.rate-btn--calc:hover {
+  outline: 1px solid var(--accent-light);
+  color: var(--accent-title-light);
+}
+
+/* PLACEMENT EQUIPMENT */
+
+.placement-equipment {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.container {
+}
+.placement-equipment--wrapper {
+  position: relative;
+}
+.placement-equipment--bgi {
+  display: block;
+  width: 100%;
+  max-width: 1075px;
+  height: 275px;
+  position: absolute;
+  background-image: url(../images/background-image/размещение-оборудования.png);
+  top: -65px;
+  left: 0;
+}
+
+.placement-equipment--box {
+  margin-top: 46px;
+  display: flex;
+  gap: 20px;
+}
+.placement-equipment--box--item {
+  border: 1px solid #373737;
+  border-radius: 15px;
+  position: relative;
+}
+.placement-equipment--box--item h3 {
+  margin: 70px 0 35px 14px;
+  color: var(--accent-title-light);
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.placement-equipment-price1 {
+  margin: 0 0 15px 14px;
+  color: var(--accent-text-light);
+  font-size: 20px;
+  font-weight: 300;
+}
+.placement-equipment-price2 {
+  margin: 0 0 53px 14px;
+  color: var(--accent-text-light);
+  font-size: 20px;
+  font-weight: 300;
+}
+.placement-equipment--box--link {
+  position: absolute;
+  right: -10px;
+  bottom: -20px;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 38px;
+  background-color: var(--accent-light);
+  color: var(--accent-dark-1e);
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+.placement-equipment--box--link:hover {
+  color: var(--accent-title-light);
+  background-color: var(--accent-dark-1c);
+  outline: 1px solid var(--accent-light);
+}
+
+/* MINING TRAILER */
+
+.mining-trailer {
+  margin-top: 165px;
+}
+.container {
+}
+.mining-trailer--wrapper {
+  position: relative;
+}
+.mining-trailer--bgi {
+  display: block;
+  width: 100%;
+  max-width: 1075px;
+  height: 275px;
+  position: absolute;
+  background-image: url(../images/background-image/ТрЕЙЛЕР-МАЙНИНГ.png);
+  top: -65px;
+  left: 0;
+}
+
+.mining-trailer-box {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 213px;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.mining-trailer-box--item {
+  outline: 1px solid #373737;
+  border-radius: 20px;
+}
+.mining-trailer-box--item h3 {
+  margin: 0;
+  margin-top: 49px;
+  margin-left: 15px;
+  font-size: 28px;
+  color: var(--accent-title-light);
+  font-weight: 600;
+}
+.mining-trailer-box--item p {
+  margin: 0;
+  margin-top: 18px;
+  margin-left: 15px;
+  font-size: 16px;
+  color: var(--accent-text-light);
+  font-weight: 300;
+}
+
+.mining-trailer-box-icon {
+  height: 75px;
+  width: 75px;
+  float: right;
+  padding: 37px 30px 0 0;
+}
+.mining-trailer-icon {
+  width: 100%;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  scale: 130%;
+}
+
+.mining-trailer-box
+  > .mining-trailer-box--item:nth-child(1)
+  > .mining-trailer-box-icon
+  > .mining-trailer-icon {
+  background-image: url(../images/icons/Гибкость.svg);
+}
+.mining-trailer-box
+  > .mining-trailer-box--item:nth-child(2)
+  > .mining-trailer-box-icon
+  > .mining-trailer-icon {
+  background-image: url(../images/icons/Полная-автономность.svg);
+}
+.mining-trailer-box
+  > .mining-trailer-box--item:nth-child(3)
+  > .mining-trailer-box-icon
+  > .mining-trailer-icon {
+  background-image: url(../images/icons/Быстрая-окупаемость.svg);
+}
+
+.mining-trailer--link {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  padding: 16px 49px;
+  background-color: var(--accent-light);
+  color: var(--accent-dark-1e);
+  align-items: center;
+  transition: 0.3s ease;
+  display: block;
+  max-width: 411px;
+  margin: 0 auto;
+}
+
+.mining-trailer--link:hover {
+  color: var(--accent-title-light);
+  background-color: transparent;
+  outline: 1px solid var(--accent-light);
 }
