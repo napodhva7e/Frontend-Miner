@@ -50,7 +50,6 @@ a {
   background-size: contain;
 }
 .logo:hover {
-  
 }
 .nav {
   flex-grow: 1;
@@ -73,8 +72,8 @@ a {
   border-bottom: 1px solid var(--accent-light);
 }
 .language-popUp-menu {
-  width: 50px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background-image: url(../images/language-icons/Глобус.svg);
   background-repeat: no-repeat;
   background-size: contain;
