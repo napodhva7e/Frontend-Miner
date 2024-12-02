@@ -49,6 +49,9 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
 }
+.logo:hover {
+  
+}
 .nav {
   flex-grow: 1;
   gap: 27px;
