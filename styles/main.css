@@ -874,6 +874,7 @@ a {
   display: flex;
   width: 600px;
   flex-direction: column;
+  z-index: 1;
 }
 
 .form-box--item {
@@ -896,8 +897,11 @@ a {
   font-size: 22px;
   width: 93%;
   padding-left: 40px;
+  z-index: 1;
 }
-
+.form-box--item input:focus {
+  color: var(--accent-title-light);
+}
 .form--btn {
   background-color: var(--accent-light);
   color: var(--accent-dark-1e);
@@ -1026,6 +1030,9 @@ a {
   font-size: 18px;
   font-weight: 300;
   padding: 10px 7px;
+}
+.newsletter-input--box input:focus {
+  color: var(--accent-title-light);
 }
 .newsletter-btn {
   background-color: var(--accent-light);
