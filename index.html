@@ -14,18 +14,50 @@
     <title>Miner Website</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="headerTop">
       <div class="container">
         <div class="header--wrapper">
-          <button class="burger-menu" onclick="openModal()"></button>
+          <!-- <button class="burger-menu" onclick="openModal()"></button> -->
+
+          <!-- burger menu -->
+          <div class="menu">
+            <input
+              type="checkbox"
+              id="burger-checkbox"
+              class="burger-checkbox"
+            />
+            <label for="burger-checkbox" class="burger"></label>
+            <ul class="menu-list">
+              <li><a href="#" class="menu-item">О нас</a></li>
+              <li></li>
+              <li><a href="#" class="menu-item">Оборудование</a></li>
+              <li></li>
+              <li>
+                <a href="#" class="menu-item">Тарифы на электроэнергию</a>
+              </li>
+              <li></li>
+              <li><a href="#" class="menu-item">Размещение</a></li>
+              <li></li>
+              <li><a href="#" class="menu-item">Инвесторы</a></li>
+              <li></li>
+              <li><a href="#" class="menu-item">Контакты</a></li>
+              <li></li>
+            </ul>
+          </div>
+          <!-- burger menu -->
+
           <div class="logo"></div>
           <nav class="nav header-nav">
             <a href="#" class="nav--link">О&nbsp;нас</a>
-            <a href="#" class="nav--link">Оборудование</a>
-            <a href="#" class="nav--link">Тарифы&nbsp;на&nbsp;электроэнергию</a>
-            <a href="#" class="nav--link">Размещение</a>
-            <a href="#" class="nav--link">Инвесторы</a>
-            <a href="#" class="nav--link">Контакты</a>
+            <a href="#main" class="nav--link hero-btn">Оборудование</a>
+            <a href="#rate" class="nav--link hero-btn"
+              >Тарифы&nbsp;на&nbsp;электроэнергию</a
+            >
+            <a href="#placement-equipment" class="nav--link hero-btn"
+              >Размещение</a
+            >
+            <a href="#investors" class="nav--link hero-btn">Инвесторы</a>
+            <a href="#contacts" class="nav--link hero-btn">Контакты</a>
           </nav>
           <div class="language-popUp-menu"></div>
         </div>
@@ -44,8 +76,8 @@
             масштаба
           </p>
           <div class="breadcumbs--link-box">
-            <a href="">Выбрать оборудование</a>
-            <a href="">Бесплатная консультация</a>
+            <a href="#main" class="hero-btn">Выбрать оборудование</a>
+            <a href="#form" class="hero-btn">Бесплатная консультация</a>
           </div>
         </div>
       </div>
@@ -78,7 +110,7 @@
               </div>
               <h5>Гибкость</h5>
               <p>
-                Выгодные тарифы на электроэнергию  и гибкие условия размещения
+                Выгодные тарифы на электроэнергию и гибкие условия размещения
               </p>
             </div>
             <div class="advantages-box--item">
@@ -92,8 +124,8 @@
         </div>
       </div>
     </section>
-
-    <section class="main">
+   
+    <section class="main" id="main">
       <div class="container">
         <div class="main--wrapper">
           <div class="main--bgi"></div>
@@ -211,6 +243,7 @@
       </div>
     </section>
 
+
     <section class="relevant-system">
       <div class="relevant-box--title">
         <h1>Актуальные и безопасные модели для добычи</h1>
@@ -233,7 +266,7 @@
       </div>
     </section>
 
-    <section class="rate">
+    <section class="rate" id="rate">
       <div class="container">
         <div class="rate--wrapper">
           <div class="rate--bgi"></div>
@@ -278,7 +311,7 @@
       </div>
     </section>
 
-    <section class="placement-equipment">
+    <section class="placement-equipment" id="placement-equipment">
       <div class="container">
         <div class="placement-equipment--wrapper">
           <div class="placement-equipment--bgi"></div>
@@ -354,7 +387,7 @@
       </div>
     </section>
 
-    <section class="investors">
+    <section class="investors" id="investors">
       <div class="container">
         <div class="investors--wrapper">
           <div class="investors--bgi"></div>
@@ -407,7 +440,7 @@
       </div>
     </section>
 
-    <section class="form">
+    <section class="form" id="form">
       <div class="container">
         <div class="form--wrapper">
           <div class="advantages--bgi form--bgi"></div>
@@ -455,7 +488,7 @@
       </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="container">
         <div class="contacts--wrapper">
           <h2>контактные данные</h2>
@@ -524,5 +557,9 @@
         <p class="footer-copyrights">© 2024 MINER. Все права защищены</p>
       </div>
     </footer>
+
+    <a href="#headerTop" class="button-up hidden" id="btnUp">Наверх</a>
+
+    <script src="script/script.js"></script>
   </body>
 </html>
