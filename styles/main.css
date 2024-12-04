@@ -39,12 +39,19 @@ a {
   justify-content: space-between;
 }
 .logo {
-  display: block;
-  width: 85px;
-  height: 18px;
-  background-image: url(../images/logo.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
+  display: flex;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 205, 0, 0.5) 0%,
+    rgba(255, 205, 0, 1) 30%,
+    rgba(255, 205, 0, 1) 80%,
+    rgba(255, 205, 0, 0.5) 100%
+  );
 }
 .nav {
   flex-grow: 1;
@@ -574,6 +581,7 @@ a {
   color: var(--accent-dark-1e);
   text-transform: uppercase;
   transition: 0.3s ease;
+  z-index: 1;
 }
 .placement-equipment--box--link:hover {
   color: var(--accent-title-light);
@@ -821,6 +829,7 @@ a {
   text-transform: uppercase;
   transition: 0.3s ease;
   margin: 0 20px;
+  z-index: 1;
 }
 
 .investors--link:hover {
@@ -1096,6 +1105,16 @@ a {
   align-items: center;
   justify-content: space-around;
 }
+.logo.footer-logo {
+  font-size: clamp(32px, 2.5vw, 40px);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 205, 0, 0.5) 0%,
+    rgba(255, 205, 0, 1) 30%,
+    rgba(255, 205, 0, 1) 80%,
+    rgba(255, 205, 0, 0.5) 100%
+  );
+}
 .footer-additionaly-box {
   display: flex;
   gap: 2.18vw;
@@ -1342,6 +1361,13 @@ a {
   }
   .logo {
     flex-grow: 1;
+    background-image: linear-gradient(
+      90deg,
+      rgba(255, 205, 0, 0.5) 0%,
+      rgba(255, 205, 0, 1) 2%,
+      rgba(255, 205, 0, 1) 6%,
+      rgba(255, 205, 0, 0.5) 8%
+    );
   }
   .menu {
     display: block;
@@ -1430,6 +1456,20 @@ a {
 }
 
 @media (max-width: 500px) {
+  .logo {
+    flex-grow: 1;
+    background-image: linear-gradient(
+      90deg,
+      rgba(255, 205, 0, 0.5) 0%,
+      rgba(255, 205, 0, 1) 7%,
+      rgba(255, 205, 0, 1) 23%,
+      rgba(255, 205, 0, 0.5) 32%
+    );
+  }
+  .logo.footer-logo {
+    writing-mode: vertical-rl;
+    font-size: 40px;
+  }
   .breadcumbs--link-box {
     flex-direction: column;
   }
