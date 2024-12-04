@@ -154,9 +154,11 @@ a {
   max-width: 1075px;
   height: 275px;
   position: absolute;
-  background-image: url(../images/background-image/преимущества-miner.png);
-  top: -150px;
+  background-image: url(../images/background-image/преимущества-miner.svg);
+  top: -21%;
   left: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .h3-info-title {
   font-size: clamp(14px, 2vw, 24px);
@@ -260,9 +262,11 @@ a {
   max-width: 1075px;
   height: 275px;
   position: absolute;
-  background-image: url(../images/background-image/оборудование-для-майнинга.png);
-  top: -150px;
+  background-image: url(../images/background-image/оборудование-для-майнинга.svg);
+  top: -21%;
   left: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .h2-info-title {
@@ -445,9 +449,11 @@ a {
   max-width: 1075px;
   height: 275px;
   position: absolute;
-  background-image: url(../images/background-image/тарифы-на-электроэнергию.png);
-  top: -150px;
+  background-image: url(../images/background-image/тарифы-на-электроэнергию.svg);
+  top: -21%;
   left: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .rate-box {
   margin-left: 5vw;
@@ -535,9 +541,11 @@ a {
   max-width: 1075px;
   height: 275px;
   position: absolute;
-  background-image: url(../images/background-image/размещение-оборудования.png);
-  top: -65px;
+  background-image: url(../images/background-image/размещение-оборудования.svg);
+  top: -9%;
   left: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .placement-equipment--box {
@@ -604,9 +612,11 @@ a {
   max-width: 1075px;
   height: 275px;
   position: absolute;
-  background-image: url(../images/background-image/ТрЕЙЛЕР-МАЙНИНГ.png);
-  top: -65px;
+  background-image: url(../images/background-image/ТрЕЙЛЕР-МАЙНИНГ.svg);
+  top: -9%;
   left: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .mining-trailer-box {
@@ -706,9 +716,11 @@ a {
   max-width: 1075px;
   height: 275px;
   position: absolute;
-  background-image: url(../images/background-image/инвесторы.png);
-  top: -65px;
+  background-image: url(../images/background-image/инвесторы.svg);
+  top: -9%;
   left: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .investors-box {
@@ -849,8 +861,10 @@ a {
 }
 
 .form--bgi {
-  background-image: url(../images/background-image/контакты.png);
-  top: -70px;
+  background-image: url(../images/background-image/контакты.svg);
+  top: -8%;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .form-container {
