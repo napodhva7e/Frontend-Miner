@@ -143,20 +143,22 @@ a {
 
 .advantages {
   margin-top: 10.33vw;
+  position: relative;
 }
 
 .advantages--wrapper {
-  position: relative;
 }
 .advantages--bgi {
   display: block;
   width: 100%;
-  max-width: 1075px;
-  height: 275px;
+  max-width: 1370px;
+  height: 300px;
   position: absolute;
   background-image: url(../images/background-image/преимущества-miner.svg);
-  top: -21%;
+  top: -25%;
   left: 0;
+  right: 0;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -251,20 +253,20 @@ a {
 /* MAIN */
 .main {
   margin-top: 8.7vw;
-}
-
-.main--wrapper {
   position: relative;
 }
+
 .main--bgi {
   display: block;
   width: 100%;
-  max-width: 1075px;
-  height: 275px;
+  max-width: 1400px;
+  height: 350px;
   position: absolute;
   background-image: url(../images/background-image/оборудование-для-майнинга.svg);
-  top: -21%;
+  top: -9%;
   left: 0;
+  right: 0;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -438,20 +440,20 @@ a {
 
 .rate {
   margin-top: 10.33vw;
-}
-
-.rate--wrapper {
   position: relative;
 }
+
 .rate--bgi {
   display: block;
   width: 100%;
-  max-width: 1075px;
-  height: 275px;
+  max-width: 1400px;
+  height: 350px;
   position: absolute;
   background-image: url(../images/background-image/тарифы-на-электроэнергию.svg);
-  top: -21%;
+  top: -24%;
   left: 0;
+  right: 0;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -531,19 +533,20 @@ a {
 .placement-equipment {
   margin-top: 5.44vw;
   margin-bottom: 5.44vw;
-}
-.placement-equipment--wrapper {
   position: relative;
 }
+
 .placement-equipment--bgi {
   display: block;
   width: 100%;
-  max-width: 1075px;
-  height: 275px;
+  max-width: 1400px;
+  height: 350px;
   position: absolute;
   background-image: url(../images/background-image/размещение-оборудования.svg);
-  top: -9%;
+  top: -12%;
   left: 0;
+  right: 0;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -601,20 +604,20 @@ a {
 
 .mining-trailer {
   margin-top: 8.97vw;
-}
-
-.mining-trailer--wrapper {
   position: relative;
 }
+
 .mining-trailer--bgi {
   display: block;
   width: 100%;
-  max-width: 1075px;
-  height: 275px;
+  max-width: 1000px;
+  height: 300px;
   position: absolute;
   background-image: url(../images/background-image/ТрЕЙЛЕР-МАЙНИНГ.svg);
-  top: -9%;
+  top: -21%;
   left: 0;
+  right: 0;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -705,20 +708,20 @@ a {
 
 .investors {
   margin-top: 6.53vw;
-}
-
-.investors--wrapper {
   position: relative;
 }
+
 .investors--bgi {
   display: block;
   width: 100%;
-  max-width: 1075px;
-  height: 275px;
+  max-width: 1500px;
+  height: 350px;
   position: absolute;
   background-image: url(../images/background-image/инвесторы.svg);
-  top: -9%;
+  top: -10%;
   left: 0;
+  right: 0;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -855,16 +858,15 @@ a {
 
 .form {
   margin-bottom: 4.35vw;
-}
-.form--wrapper {
   position: relative;
 }
-
 .form--bgi {
   background-image: url(../images/background-image/контакты.svg);
   top: -8%;
   background-repeat: no-repeat;
   background-size: contain;
+  margin: 0 auto;
+  right: 0;
 }
 
 .form-container {
