@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.card-slider {
+  min-height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e1e1e;
+  position: relative;
+  z-index: 1;
+  margin-top: 10px;
+}
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+  background-color: #1e1e1e;
+}
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card {
+  border-radius: 25px;
+  background-color: #1e1e1e;
+}
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-content {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-image .card-img {
+  height: 80%;
+  width: auto;
+}
+.name {
+  font-size: clamp(14px, 5vw, 24px);
+  font-weight: 500;
+  color: #ffcd00;
+}
+.description {
+  font-size: clamp(12px, 4vw, 15px);
+  color: #cfcfcf;
+  text-align: center;
+  font-style: italic;
+}
+.button {
+  border: none;
+  font-size: 16px;
+  color: #eaecef;
+  padding: 8px 11vw;
+  background-color: #2ebd85;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+.button:hover {
+  background: transparent;
+  border: 1px solid #2ebd85;
+}
+
+.swiper-navBtn {
+  color: #6e93f7;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover {
+  color: #4070f4;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 35px;
+}
+.swiper-button-next {
+  right: 0;
+}
+.swiper-button-prev {
+  left: 0;
+}
+.swiper-pagination-bullet {
+  background-color: #6e93f7;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: #4070f4;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+  .swiper-navBtn {
+    display: none;
+  }
+}
+
+.card.swiper-slide > .slider-specifications {
+  position: relative;
+  top: 20px;
+  right: -46%;
+  width: 120px;
+  font-size: clamp(14px, 1.5vw, 20px);
+}
+
+@media (max-width: 500px) {
+  .card-slider {
+    display: flex;
+  }
+}

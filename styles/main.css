@@ -352,7 +352,7 @@ a {
 }
 .main-item--price {
   margin: 0;
-  font-size: clamp(18px, 3vw, 28px);
+  font-size: clamp(18px, 5vw, 28px);
   font-weight: 600;
   color: var(--accent-title-light);
   margin: 10px 0;
@@ -1387,7 +1387,7 @@ a {
   .advantages-box {
     grid-template-rows: repeat(2, 240px);
   }
-
+  /* padding: 8px 0px 8px 40px; */
   .specifitations--time {
     padding: 8px 15px 8px 45px;
   }
@@ -1460,6 +1460,9 @@ a {
     margin: 0 auto;
     max-width: 200px;
   }
+  .section-bg-img {
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {
@@ -1494,6 +1497,7 @@ a {
     right: 6.5vw;
   }
   .main-box {
+    display: none;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 320px);
     gap: 30px;
@@ -1561,6 +1565,12 @@ a {
   }
   .container {
     padding: 0 6px;
+  }
+  .specifitations--time {
+    padding: 8px 0px 8px 40px;
+  }
+  .specifications--power {
+    padding: 8px 0px 8px 40px;
   }
 }
 

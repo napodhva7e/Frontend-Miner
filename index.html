@@ -11,6 +11,12 @@
     />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="slider/style.css">
+       <!-- <title>Responsive Card Slider</title> -->
+       <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+       
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+       
     <title>Miner Website</title>
   </head>
   <body>
@@ -84,7 +90,7 @@
     </section>
 
     <section class="advantages">
-      <div class="advantages--bgi"></div>
+      <div class="advantages--bgi section-bg-img"></div>
       <div class="container">
         <div class="advantages--wrapper">
           <h3 class="h3-info-title">основные преимущества Miner</h3>
@@ -126,7 +132,7 @@
     </section>
    
     <section class="main" id="main">
-      <div class="main--bgi"></div>
+      <div class="main--bgi section-bg-img"></div>
       <div class="container">
         <div class="main--wrapper">
           <div class="main-info--box">
@@ -224,6 +230,7 @@
               <button class="btn-primary">Заказать</button>
             </div>
             <div class="main-box--item">
+
               <div class="main-item--specifications">
                 <p class="specifitations--time">9.16 GH/s</p>
                 <p class="specifications--power">3425W</p>
@@ -239,6 +246,135 @@
               <button class="btn-primary">Заказать</button>
             </div>
           </div>
+
+          <section class="card-slider">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+
+                        <div class="card swiper-slide">
+                            <div class="main-item--specifications slider-specifications">
+                                <p class="specifitations--time slider-time">110 TH/s</p>
+                                <p class="specifications--power slider-power">3250W</p>
+                            </div>
+                            <div class="image-content">
+                                <div class="card-image">
+                                    <img src="../images/miner-system/Antminer S19 Pro.png" alt="" class="card-img" />
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="name slider-name">Antminer S19 Pro</h2>
+                                <h5 class="main-item--price slider-price">2.500 €</h5>
+                                <p class="description slider-info">Высокая эффективность и надежность для максимальной доходности</p>
+    
+                                <button class="button">Заказать</button>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="main-item--specifications slider-specifications">
+                                <p class="specifitations--time slider-time">100 TH/s</p>
+                                <p class="specifications--power slider-power">3400W</p>
+                            </div>
+                            <div class="image-content">
+                                <div class="card-image">
+                                    <img src="../images/miner-system/Whatsminer M30S.png" alt="" class="card-img" />
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="name slider-name">Whatsminer M30S</h2>
+                                <h5 class="main-item--price slider-price">2.300 €</h5>
+                                <p class="description slider-info">Высокая эффективность и надежность для максимальной доходности</p>
+    
+                                <button class="button">Заказать</button>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="main-item--specifications slider-specifications">
+                                <p class="specifitations--time slider-time">14.4 GH/s</p>
+                                <p class="specifications--power slider-power">3920W</p>
+                            </div>
+                            <div class="image-content">
+                                <div class="card-image">
+                                    <img src="../images/miner-system/Elphapex DG 1+ 14.4G.png" alt="" class="card-img" />
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="name slider-name">Elphapex DG 1+ 14.4G</h2>
+                                <h5 class="main-item--price slider-price">10.450 €</h5>
+                                <p class="description slider-info">Высокая эффективность и надежность для максимальной доходности</p>
+    
+                                <button class="button">Заказать</button>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="main-item--specifications slider-specifications">
+                                <p class="specifitations--time slider-time">13.6 GH/s</p>
+                                <p class="specifications--power slider-power">3400W</p>
+                            </div>
+                            <div class="image-content">
+                                <div class="card-image">
+                                    <img src="../images/miner-system/Elphapex DG 1+ 13.6G.png" alt="" class="card-img" />
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="name slider-name">Elphapex DG 1+ 13.6G</h2>
+                                <h5 class="main-item--price slider-price">9.800 €</h5>
+                                <p class="description slider-info">Высокая эффективность и надежность для максимальной доходности</p>
+    
+                                <button class="button">Заказать</button>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="main-item--specifications slider-specifications">
+                                <p class="specifitations--time slider-time">11 GH/s</p>
+                                <p class="specifications--power slider-power">3420W</p>
+                            </div>
+                            <div class="image-content">
+                                <div class="card-image">
+                                    <img src="../images/miner-system/Elphapex DG 1 11G.png" alt="" class="card-img" />
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="name slider-name">Elphapex DG 1 11G</h2>
+                                <h5 class="main-item--price slider-price">6.999 €</h5>
+                                <p class="description slider-info">Высокая эффективность и надежность для максимальной доходности</p>
+    
+                                <button class="button">Заказать</button>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="main-item--specifications slider-specifications">
+                                <p class="specifitations--time">9.16 GH/s</p>
+                                <p class="specifications--power">3425W</p>
+                            </div>
+                            <div class="image-content">
+                                <div class="card-image">
+                                    <img src="../images/miner-system/Antminer L7.png" alt="" class="card-img" />
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="name slider-name">Antminer L7</h2>
+                                <h5 class="main-item--price slider-price">5.700 €</h5>
+                                <p class="description slider-info">Высокая эффективность и надежность для максимальной доходности</p>
+    
+                                <button class="button">Заказать</button>
+                            </div>
+                        </div>
+                        
+            </div>
+          </section>
+          
         </div>
       </div>
     </section>
@@ -267,7 +403,7 @@
     </section>
 
     <section class="rate" id="rate">
-      <div class="rate--bgi"></div>
+      <div class="rate--bgi section-bg-img"></div>
       <div class="container">
         <div class="rate--wrapper">
           <div class="main-info--box">
@@ -312,7 +448,7 @@
     </section>
 
     <section class="placement-equipment" id="placement-equipment">
-      <div class="placement-equipment--bgi"></div>
+      <div class="placement-equipment--bgi section-bg-img"></div>
       <div class="container">
         <div class="placement-equipment--wrapper">
           <div class="main-info--box">
@@ -346,7 +482,7 @@
     </section>
     
     <section class="mining-trailer">
-      <div class="mining-trailer--bgi"></div>
+      <div class="mining-trailer--bgi section-bg-img"></div>
       <div class="container">
         <div class="mining-trailer--wrapper">
           <div class="main-info--box">
@@ -388,7 +524,7 @@
     </section>
 
     <section class="investors" id="investors">
-      <div class="investors--bgi"></div>
+      <div class="investors--bgi section-bg-img"></div>
       <div class="container">
         <div class="investors--wrapper">
           <div class="main-info--box">
@@ -441,7 +577,7 @@
     </section>
 
     <section class="form" id="form">
-      <div class="advantages--bgi form--bgi"></div>
+      <div class="advantages--bgi form--bgi section-bg-img"></div>
       <div class="container">
         <div class="form--wrapper">
           <div class="main-info--box">
@@ -562,5 +698,6 @@
     <a href="#headerTop" class="button-up hidden" id="btnUp">Наверх</a>
 
     <script src="script/script.js"></script>
+    <script src="slider/script.js"></script>
   </body>
 </html>
