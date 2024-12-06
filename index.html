@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="slider/style.css">
+    <link rel="stylesheet" href="styles/language-button.css">
+    <link rel="stylesheet" href="styles/burger-menu.css">
     
        <!-- <title>Responsive Card Slider</title> -->
        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
@@ -21,36 +23,23 @@
     <title>Miner Website</title>
   </head>
   <body>
-    <header class="header" id="headerTop">
+    <header class="header">
       <div class="container">
         <div class="header--wrapper">
 
           <!-- burger menu -->
-          <div class="menu">
-            <input
-              type="checkbox"
-              id="burger-checkbox"
-              class="burger-checkbox"
-            />
-            <label for="burger-checkbox" class="burger"></label>
-            <ul class="menu-list">
-              <li><a href="#" class="menu-item">О нас</a></li>
-              <li></li>
-              <li><a href="#" class="menu-item">Оборудование</a></li>
-              <li></li>
-              <li>
-                <a href="#" class="menu-item">Тарифы на электроэнергию</a>
-              </li>
-              <li></li>
-              <li><a href="#" class="menu-item">Размещение</a></li>
-              <li></li>
-              <li><a href="#" class="menu-item">Инвесторы</a></li>
-              <li></li>
-              <li><a href="#" class="menu-item">Контакты</a></li>
-              <li></li>
-            </ul>
+
+          <div class="drop-menu">
+            <button onclick="menuPopUp()" class="btn-menu"></button>
+            <div id="drop-menu" class="dropdown-content-menu">
+              <a href="#">О нас</a>
+              <a href="#">Оборудование</a>
+              <a href="#">Тарифы&nbsp;на&nbsp;электроэнергию</a>
+              <a href="#">Размещение</a>
+              <a href="#">Инвесторы</a>
+              <a href="#">Контакты</a>
+            </div>
           </div>
-          <!-- burger menu -->
 
           <span class="logo">miner</span>
           <nav class="nav header-nav">
@@ -66,33 +55,28 @@
             <a href="#contacts" class="nav--link hero-btn">Контакты</a>
           </nav>
 
-          <!-- <div class="language-menu">
-            <input
-              type="checkbox"
-              id="language-checkbox"
-              class="language-checkbox"
-              />
-            <label for="language-checkbox" class="language"></label>
-            <ul class="language-list">
-              <li><a href="#" class="menu-lang-item">Русский язык</a></li>
-              <li><a href="#" class="menu-lang-item">English language</a></li>
-              <li>
-                <a href="#" class="menu-lang-item">Eesti keel</a>
-              </li>
-              <li><a href="#" class="menu-lang-item">Қазақ тілі</a></li>
-              <li><a href="#" class="menu-lang-item">Norsk språk</a></li>
-              <li><a href="#" class="menu-lang-item">Nederlandse taal</a></li>
-              <li><a href="#" class="menu-lang-item">Svenska språket</a></li>
-              <li><a href="#" class="menu-lang-item">Suomen kieli</a></li>
-            </ul>
-          </div> -->
+          <div class="dropdown">
+            <button onclick="languagePopUp()" class="dropbtn"></button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Русский язык</a>
+              <a href="#">English language</a>
+              <a href="#">Eesti keel</a>
+              <a href="#">Қазақ тілі</a>
+              <a href="#">Norsk språk</a>
+              <a href="#">Nederlandse taal</a>
+              <a href="#">Svenska språket</a>
+              <a href="#">Suomen kieli</a>
+            </div>
+          </div>
           
         </div>
         </div>
       </div>
     </header>
-
-    <section class="hero">
+    <section>
+      <div class="top-line" id="TopLineId"></div>
+    </section>
+    <section class="hero" id="heroId">
       <div class="container">
         <div class="breadcumbs">
           <h1>
@@ -717,7 +701,7 @@
         <p class="footer-copyrights">© 2024 MINER. Все права защищены</p>
       </div>
     </footer>   
-    <a href="#headerTop" class="button-up hidden" id="btnUp">Наверх</a>
+    <a href="#TopLineId" class="button-up hidden" id="btnUp">Наверх</a>
 
     <script src="script/script.js"></script>
     <script src="slider/script.js"></script>

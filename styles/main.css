@@ -22,6 +22,11 @@ a {
 /* HEADER */
 .header {
   background-color: var(--accent-dark-1c);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 .container {
   width: 100%;
@@ -73,18 +78,14 @@ a {
 .nav--link:hover {
   border-bottom: 1px solid var(--accent-light);
 }
-.language-menu {
-  width: 30px;
-  height: 30px;
-  background-image: url(../images/language-icons/Глобус.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
+.top-line {
+  height: 10px;
 }
 
 /* HERO */
 
 .hero {
-  margin-top: 8.16vw;
+  margin-top: 200px;
 }
 
 .breadcumbs {
@@ -1291,7 +1292,7 @@ a {
   opacity: 1;
 }
 
-.menu {
+/* .menu {
   display: none;
 }
 .burger-checkbox {
@@ -1366,50 +1367,8 @@ a {
 
 .burger-checkbox:checked ~ .menu-list {
   transform: translateX(0);
-}
+} */
 
-.language-checkbox {
-  position: absolute;
-  visibility: hidden;
-}
-.language {
-  cursor: pointer;
-  display: block;
-  position: relative;
-  border: none;
-  background: transparent;
-  width: 27px;
-  height: 18px;
-  z-index: 2;
-}
-.language-list {
-  top: 15%;
-  right: 0;
-  position: absolute;
-  display: grid;
-  gap: 6px;
-  padding: 10px 0 10px 0;
-  margin: 0;
-  background: var(--accent-dark-1c);
-  list-style-type: none;
-  transform: translateX(100%);
-  transition: 0.3s;
-  width: 100%;
-  max-width: 300px;
-  z-index: 2;
-}
-
-.menu-lang-item {
-  display: block;
-  padding: 8px;
-  color: white;
-  font-size: clamp(14px, 4vw, 18px);
-  text-align: center;
-  text-decoration: none;
-}
-.language-checkbox:checked ~ .language-list {
-  transform: translateX(0);
-}
 @media (max-width: 1024px) {
   .header--wrapper {
     gap: 20px;

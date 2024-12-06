@@ -1,0 +1,49 @@
+.btn-menu {
+  width: 30px;
+  height: 18px;
+  background-image: url(../images/icons/burger-menu.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.drop-menu {
+  position: relative;
+  display: block;
+}
+
+.dropdown-content-menu {
+  display: none;
+  position: absolute;
+  background-color: #1e1e1e;
+  left: 0;
+  top: 0;
+  min-width: 180px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 20px 10px;
+}
+
+.dropdown-content-menu a {
+  color: #ffcd00;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.drop-menu a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.show {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .drop-menu {
+    display: inline-block;
+  }
+}

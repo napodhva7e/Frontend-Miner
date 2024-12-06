@@ -47,13 +47,38 @@ function clickHandler(e) {
   });
 }
 
-// Menu
+// Menu button
 
-// Language
-function openLangModal() {
-  document.getElementById("modal").style.top = "0px";
+function menuPopUp() {
+  document.getElementById("drop-menu").classList.toggle("show");
 }
 
-function closeLangModal() {
-  document.getElementById("modal").style.top = "-400px";
+// language button
+
+function languagePopUp() {
+  document.getElementById("myDropdown").classList.toggle("show");
 }
+// Закрыть раскрывающийся список, если пользователь щелкнет за его пределами, сразу и кнопки языков и для кнопки меню.
+
+window.onclick = function (event) {
+  if (!event.target.matches(".dropbtn")) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains("show")) {
+        openDropdown.classList.remove("show");
+      }
+    }
+  }
+  if (!event.target.matches(".btn-menu")) {
+    var dropMenu = document.getElementsByClassName("dropdown-content-menu");
+    var i;
+    for (i = 0; i < dropMenu.length; i++) {
+      var openDropMenu = dropMenu[i];
+      if (openDropMenu.classList.contains("show")) {
+        openDropMenu.classList.remove("show");
+      }
+    }
+  }
+};

@@ -1,0 +1,47 @@
+.dropbtn {
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/language-icons/Глобус.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.dropbtn:hover, 
+.dropbtn:focus {
+  background-image: url(../images/language-icons/Глобус-blur.svg);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1e1e1e;
+  right: 0;
+  min-width: 180px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #ffcd00;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.show {
+  display: block;
+}
