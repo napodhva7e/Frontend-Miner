@@ -13,6 +13,7 @@ body {
   font-family: var(--Montserrat-UI);
   background-color: var(--accent-dark-1e);
   color: var(--accent-dark);
+  cursor: default;
 }
 
 a {
@@ -186,7 +187,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: 0.3s ease;
+  transition: 0.3s ease-in-out;
   z-index: 1;
 }
 .advantages-box--item:hover {
@@ -382,6 +383,7 @@ a {
 .btn-primary:hover {
   outline: 1px solid var(--item-order-btn);
   background-color: transparent;
+  cursor: pointer;
 }
 
 /* RELEVANT */
@@ -642,6 +644,7 @@ a {
 .mining-trailer-box--item {
   outline: 1px solid #373737;
   border-radius: 20px;
+  transition: 0.3s ease-in-out;
 }
 .mining-trailer-box--item h3 {
   margin: 0;
@@ -1188,6 +1191,7 @@ a {
   color: var(--accent-title-light);
   font-weight: 400;
   transition: 0.4s ease;
+  width: max-content;
 }
 .footer-nav--link:hover {
   color: var(--accent-light);
@@ -1210,6 +1214,11 @@ a {
   display: flex;
   align-items: center;
   gap: 0.5vw;
+  transition: 0.3s ease;
+  width: max-content;
+}
+.footer-social a:hover {
+  scale: 105%;
 }
 .footer-social a::before {
   content: "";
@@ -1217,7 +1226,7 @@ a {
   width: 1.63vw;
   min-width: 20px;
   height: 6vw;
-  max-height: 30px;
+  max-height: 31px;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1241,6 +1250,10 @@ a {
   min-width: 65px;
   width: 8vw;
   max-width: 160px;
+  transition: 0.5s ease;
+}
+.footer-partners a > img:hover {
+  scale: 105%;
 }
 .footer-copyrights {
   margin: 0;
