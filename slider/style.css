@@ -45,15 +45,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/miner-system/Antminer\ S19\ Pro.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100px;
-  height: 100px;
+  width: 100% !important;
 }
 .card-image .card-img {
-  height: 80%;
-  width: auto;
+  height: 80% !important;
+  width: auto !important;
 }
 .name {
   font-size: clamp(14px, 5vw, 24px);
