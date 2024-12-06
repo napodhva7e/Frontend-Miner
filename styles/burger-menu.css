@@ -7,7 +7,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 .drop-menu {
   position: relative;
@@ -20,11 +20,12 @@
   background-color: #1e1e1e;
   left: 0;
   top: -13px;
-  min-width: 180px;
+  min-width: 200px;
   width: 100%;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   padding: 20px 10px;
+  text-align: center;
 }
 
 .dropdown-content-menu a {
@@ -50,9 +51,10 @@
   }
 }
 
-@media (max-width: 320px) {
-  .dropdown-content-menu {
-    width: 100%;
-    max-width: 320px;
+@media (max-width: 500px) {
+  .drop-menu {
+    position: absolute;
+    left: 0;
+    right: 0;
   }
 }
