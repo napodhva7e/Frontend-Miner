@@ -45,6 +45,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(../images/miner-system/Antminer\ S19\ Pro.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
 }
 .card-image .card-img {
   height: 80%;
@@ -102,15 +107,6 @@
 }
 .swiper-pagination-bullet-active {
   background-color: #4070f4;
-}
-
-@media screen and (max-width: 768px) {
-  .slide-content {
-    margin: 0 10px;
-  }
-  .swiper-navBtn {
-    display: none;
-  }
 }
 
 .card.swiper-slide > .slider-specifications {
