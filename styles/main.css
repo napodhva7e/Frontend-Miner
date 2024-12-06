@@ -1590,6 +1590,7 @@ a {
   .relevant-btn-primary {
     width: 200px;
     margin: 0 auto;
+    margin-bottom: 20px;
   }
 }
 
@@ -1597,11 +1598,5 @@ a {
   .menu-list {
     width: 100%;
     max-width: 420px;
-  }
-}
-
-@media (max-width: 320px) {
-  .btn-primary {
-    padding: 8px 20px;
   }
 }
