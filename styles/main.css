@@ -368,7 +368,7 @@ a {
 
 .btn-primary {
   color: var(--accent-title-light);
-  font-size: clamp(12px, 1.5vw, 18px);
+  font-size: clamp(10px, 1.5vw, 18px);
   font-weight: 600;
   margin-top: 15px;
   padding: 18px 79px;
@@ -892,7 +892,7 @@ a {
   position: relative;
 }
 .form-container h1 {
-  margin: 1.36vw 0;
+  margin: 20px 0;
   font-size: clamp(24px, 4vw, 60px);
   color: var(--accent-title-light);
   text-align: center;
@@ -1609,6 +1609,8 @@ a {
   .investors--link {
     max-width: 250px;
     width: 60vw;
+    height: 25px;
+    align-content: center;
   }
   .footer-partners {
     gap: 8px;
@@ -1623,7 +1625,12 @@ a {
     padding: 8px 0px 8px 40px;
   }
   .mining-trailer--link {
-    padding: 2vw;
+    padding: 5px;
+    width: 180px;
+  }
+  .relevant-btn-primary {
+    width: 200px;
+    margin: 0 auto;
   }
 }
 
