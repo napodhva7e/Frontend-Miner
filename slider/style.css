@@ -45,11 +45,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100% !important;
+  width: 100%;
 }
 .card-image .card-img {
-  height: 80% !important;
-  width: auto !important;
+  height: 80%;
+  width: auto;
 }
 .name {
   font-size: clamp(14px, 5vw, 24px);
