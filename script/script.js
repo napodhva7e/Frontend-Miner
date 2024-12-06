@@ -47,15 +47,13 @@ function clickHandler(e) {
   });
 }
 
-
-
 // Menu
 
-function openModal() {
-    document.getElementById("modal").style.top = "0px";
-  }
-  
-  function closeModal() {
-    document.getElementById("modal").style.top = "-400px";
-  }
-  
+// Language
+function openLangModal() {
+  document.getElementById("modal").style.top = "0px";
+}
+
+function closeLangModal() {
+  document.getElementById("modal").style.top = "-400px";
+}

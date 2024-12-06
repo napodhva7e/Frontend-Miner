@@ -73,7 +73,7 @@ a {
 .nav--link:hover {
   border-bottom: 1px solid var(--accent-light);
 }
-.language-popUp-menu {
+.language-menu {
   width: 30px;
   height: 30px;
   background-image: url(../images/language-icons/Глобус.svg);
@@ -169,13 +169,14 @@ a {
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 0.8px;
+  margin-top: 20px;
 }
 .advantages-box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 300px);
   gap: 22px;
-  margin-top: 2.2vw;
+  margin-top: 35px;
 }
 .advantages-box--item {
   border: 1px solid #373737;
@@ -277,7 +278,7 @@ a {
   color: var(--accent-title-light);
   max-width: 800px;
   margin: 0;
-  margin-top: 1.74vw;
+  margin-top: 15px;
 }
 .p-info {
   font-size: clamp(10px, 2vw, 24px);
@@ -286,10 +287,10 @@ a {
   margin: 0;
   letter-spacing: 0.8px;
   line-height: 150%;
-  margin-top: 1.09vw;
+  margin-top: 15px;
 }
 .main-box {
-  margin-top: 4.68vw;
+  margin-top: 25px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 440px);
@@ -348,7 +349,7 @@ a {
   font-size: clamp(18px, 2.1vw, 24px);
   font-weight: 400;
   color: var(--accent-light);
-  margin-top: 0.82vw;
+  margin-top: 15px;
 }
 .main-item--price {
   margin: 0;
@@ -367,7 +368,7 @@ a {
 
 .btn-primary {
   color: var(--accent-title-light);
-  font-size: clamp(14px, 1.5vw, 18px);
+  font-size: clamp(12px, 1.5vw, 18px);
   font-weight: 600;
   margin-top: 15px;
   padding: 18px 79px;
@@ -399,11 +400,12 @@ a {
   margin: 0 10px;
   font-size: clamp(20px, 2vw, 32px);
   font-weight: 500;
+  padding: 10px;
 }
 .relevant-system--wrapper {
 }
 .relevant-box--item {
-  margin-top: 2.72vw;
+  margin-top: 25px;
 }
 .relevant-item--specifications {
   left: 270px;
@@ -535,6 +537,9 @@ a {
   margin-bottom: 5.44vw;
   position: relative;
 }
+.placement-equipment--wrapper {
+  margin-top: 30px;
+}
 
 .placement-equipment--bgi {
   display: block;
@@ -552,9 +557,9 @@ a {
 }
 
 .placement-equipment--box {
-  margin-top: 2.5vw;
+  margin-top: 25px;
   display: flex;
-  gap: 20px;
+  gap: 25px;
 }
 .placement-equipment--box--item {
   border: 1px solid #373737;
@@ -606,6 +611,9 @@ a {
   margin-top: 8.97vw;
   position: relative;
 }
+.mining-trailer--wrapper {
+  margin-top: 30px;
+}
 
 .mining-trailer--bgi {
   display: block;
@@ -623,7 +631,7 @@ a {
 }
 
 .mining-trailer-box {
-  margin-top: 2.18vw;
+  margin-top: 25px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
@@ -694,6 +702,7 @@ a {
   display: block;
   max-width: 411px;
   margin: 0 auto;
+  margin-top: 15px;
   z-index: 1;
   position: relative;
 }
@@ -710,7 +719,9 @@ a {
   margin-top: 6.53vw;
   position: relative;
 }
-
+.investors--wrapper {
+  margin-top: 30px;
+}
 .investors--bgi {
   display: block;
   width: 100%;
@@ -739,8 +750,8 @@ a {
   text-align: center;
   font-size: clamp(16px, 2vw, 28px) s;
   font-weight: 400;
-  margin-top: 1.09vw;
-  margin-bottom: 1.41vw;
+  margin-top: 15px;
+  margin-bottom: 15px;
   color: transparent;
   background-clip: text;
   background-image: linear-gradient(
@@ -758,7 +769,7 @@ a {
   margin: 0 auto;
   font-style: italic;
   font-weight: 400;
-  margin-bottom: 1.6vw;
+  margin-bottom: 15px;
 }
 
 .investors-advantages-box {
@@ -766,7 +777,7 @@ a {
   grid-template-columns: 28.5% 33.8% 37.7%;
   grid-template-rows: auto;
   flex-grow: 1;
-  margin-bottom: 1.09vw;
+  margin-bottom: 15px;
   justify-content: center;
 }
 
@@ -829,7 +840,7 @@ a {
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
-  margin-bottom: 1.9vw;
+  margin-bottom: 20px;
   align-items: center;
 }
 .investors--link {
@@ -860,6 +871,9 @@ a {
   margin-bottom: 4.35vw;
   position: relative;
 }
+.form--wrapper {
+  margin-top: 30px;
+}
 .form--bgi {
   background-image: url(../images/background-image/контакты.svg);
   top: -8%;
@@ -873,7 +887,7 @@ a {
   border: 1px solid #373737;
   background-color: #1d1d1d;
   border-radius: 25px;
-  margin-top: 2.72vw;
+  margin-top: 40px;
   overflow: hidden;
   position: relative;
 }
@@ -916,6 +930,7 @@ a {
   width: 600px;
   flex-direction: column;
   z-index: 1;
+  gap: 15px;
 }
 
 .form-box--item {
@@ -957,7 +972,7 @@ a {
 }
 .btn-primary.form--btn {
   padding: 0.82vw 3.26vw;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .form--btn:hover {
   outline: 1px solid var(--accent-light);
@@ -968,13 +983,16 @@ a {
 .contacts {
   margin-bottom: 3.26vw;
 }
+.contacts--wrapper {
+  margin: 30px 0;
+}
 .contacts--wrapper h2 {
   font-size: clamp(18px, 2vw, 30px);
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  margin-bottom: 2.72vw;
+  margin-bottom: 20px;
   color: var(--accent-light);
 }
 .contacts-box {
@@ -1055,8 +1073,8 @@ a {
   color: var(--accent-title-light);
   font-weight: 300;
   font-size: clamp(17px, 2vw, 32px);
-  padding-top: 1.63vw;
-  margin-bottom: 1.36vw;
+  padding-top: 15px;
+  margin-bottom: 15px;
   text-transform: uppercase;
 }
 .newsletter--wrapper p {
@@ -1066,7 +1084,7 @@ a {
   margin-bottom: 1.9vw;
 }
 .newsletter-input--box {
-  padding-bottom: 2.72vw;
+  padding-bottom: 25px;
 }
 .newsletter-input--box input {
   background-color: transparent;
@@ -1102,6 +1120,7 @@ a {
 /* FOOTER */
 
 .footer {
+  margin-top: 20px;
   padding-bottom: 15px;
   position: relative;
 }
@@ -1140,6 +1159,7 @@ a {
   display: flex;
   gap: 2.18vw;
   align-items: start;
+  margin-top: 25px;
 }
 .footer-additionaly-box h2 {
   margin: 0;
@@ -1150,7 +1170,6 @@ a {
 }
 
 .footer-nav {
-  margin-top: 2.18vw;
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
@@ -1172,18 +1191,16 @@ a {
 .footer-nav--link:hover {
   color: var(--accent-light);
 }
-.footer-box {
-  margin-top: 2.18vw;
-}
+
 .footer-social {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 8px;
   margin-bottom: 1.09vw;
   text-transform: uppercase;
 }
 .footer-social h2 {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .footer-social a {
   font-size: clamp(10px, 1vw, 14px);
@@ -1231,8 +1248,7 @@ a {
   font-size: clamp(8px, 1vw, 16px);
   font-weight: 300;
   color: var(--accent-title-light);
-  margin-top: 1.31vw;
-  margin-bottom: 0.76vw;
+  margin-top: 15px;
 }
 .footer-box-img {
 }
@@ -1283,7 +1299,6 @@ a {
   visibility: hidden;
 }
 .burger {
-  z-index: 1;
   cursor: pointer;
   display: block;
   position: relative;
@@ -1291,7 +1306,7 @@ a {
   background: transparent;
   width: 27px;
   height: 18px;
-  z-index: 2;
+  z-index: 3;
 }
 .burger::before,
 .burger::after {
@@ -1338,7 +1353,7 @@ a {
   transition: 0.3s;
   width: 100%;
   max-width: 300px;
-  z-index: 1;
+  z-index: 2;
 }
 .menu-item {
   display: block;
@@ -1348,13 +1363,53 @@ a {
   text-align: center;
   text-decoration: none;
 }
-/* .menu-item:hover {
-  background: rgba(255, 255, 255, 0.2);
-} */
+
 .burger-checkbox:checked ~ .menu-list {
   transform: translateX(0);
 }
 
+.language-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+.language {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: none;
+  background: transparent;
+  width: 27px;
+  height: 18px;
+  z-index: 2;
+}
+.language-list {
+  top: 15%;
+  right: 0;
+  position: absolute;
+  display: grid;
+  gap: 6px;
+  padding: 10px 0 10px 0;
+  margin: 0;
+  background: var(--accent-dark-1c);
+  list-style-type: none;
+  transform: translateX(100%);
+  transition: 0.3s;
+  width: 100%;
+  max-width: 300px;
+  z-index: 2;
+}
+
+.menu-lang-item {
+  display: block;
+  padding: 8px;
+  color: white;
+  font-size: clamp(14px, 4vw, 18px);
+  text-align: center;
+  text-decoration: none;
+}
+.language-checkbox:checked ~ .language-list {
+  transform: translateX(0);
+}
 @media (max-width: 1024px) {
   .header--wrapper {
     gap: 20px;
@@ -1479,11 +1534,6 @@ a {
   .logo.footer-logo {
     display: none;
   }
-  /* .logo.footer-logo.additionally-logo {
-    display: block;
-    font-size: clamp(24px 2vw, 40px);
-    writing-mode: horizontal-tb;
-  } */
   .breadcumbs--link-box {
     flex-direction: column;
   }
@@ -1554,14 +1604,14 @@ a {
   .investors-advantages-box {
     grid-template-columns: 220px;
     grid-template-rows: repeat(3, auto);
-    gap: 10px;
+    gap: 15px;
   }
   .investors--link {
     max-width: 250px;
     width: 60vw;
   }
   .footer-partners {
-    gap: 5px;
+    gap: 8px;
   }
   .container {
     padding: 0 6px;
@@ -1571,6 +1621,9 @@ a {
   }
   .specifications--power {
     padding: 8px 0px 8px 40px;
+  }
+  .mining-trailer--link {
+    padding: 2vw;
   }
 }
 
