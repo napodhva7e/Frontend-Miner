@@ -10,7 +10,7 @@
   margin-right: 10px;
 }
 
-.dropbtn:hover, 
+.dropbtn:hover,
 .dropbtn:focus {
   background-image: url(../images/language-icons/Глобус-blur.svg);
 }
@@ -25,6 +25,7 @@
   position: absolute;
   background-color: #1e1e1e;
   right: 0;
+  top: 40px;
   min-width: 180px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);

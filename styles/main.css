@@ -1290,7 +1290,6 @@ a {
   opacity: 1;
 }
 
-
 @media (max-width: 1024px) {
   .header--wrapper {
     gap: 20px;
@@ -1500,10 +1499,10 @@ a {
     padding: 0 6px;
   }
   .specifitations--time {
-    padding: 8px 0px 8px 40px;
+    padding: 8px 0px 8px 30px;
   }
   .specifications--power {
-    padding: 8px 0px 8px 40px;
+    padding: 8px 0px 8px 30px;
   }
   .mining-trailer--link {
     padding: 5px;
