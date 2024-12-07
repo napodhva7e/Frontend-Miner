@@ -89,19 +89,19 @@ a {
   margin-top: 200px;
 }
 
-.breadcumbs {
+.breadcrumbs {
   text-align: center;
   width: 100%;
   margin: 0 auto;
 }
-.breadcumbs h1 {
+.breadcrumbs h1 {
   font-size: clamp(32px, 5vw, 60px);
   font-weight: 700;
   margin: 0;
   color: var(--accent-title-light);
   text-transform: uppercase;
 }
-.breadcumbs h1 > span {
+.breadcrumbs h1 > span {
   color: transparent;
   background-clip: text;
   background-image: linear-gradient(
@@ -112,20 +112,20 @@ a {
     rgba(255, 205, 0, 0.5) 100%
   );
 }
-.breadcumbs p {
+.breadcrumbs p {
   font-size: clamp(16px, 2vw, 24px);
   color: var(--accent-light);
   margin-bottom: 34px;
   margin-top: 8px;
 }
-.breadcumbs--link-box {
+.breadcrumbs--link-box {
   display: flex;
   justify-content: space-between;
   margin: 0 2vw;
   gap: 20px;
 }
 
-.breadcumbs--link-box a {
+.breadcrumbs--link-box a {
   color: var(--accent-dark-1e);
   font-size: clamp(10px, 1.5vw, 14px);
   font-weight: 600;
@@ -135,7 +135,7 @@ a {
   transition: 0.3s ease;
   z-index: 1;
 }
-.breadcumbs--link-box a:hover {
+.breadcrumbs--link-box a:hover {
   color: var(--accent-title-light);
   background-color: transparent;
   outline: 1px solid var(--accent-light);

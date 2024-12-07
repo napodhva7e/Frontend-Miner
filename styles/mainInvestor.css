@@ -1,0 +1,141 @@
+:root {
+  --Montserrat-UI: "Montserrat", sans-serif;
+
+  --accent-dark-1c: #1c1c1c;
+  --accent-dark-1e: #1e1e1e;
+  --accent-light: #ffcd00;
+  --accent-title-light: #eaecef;
+  --accent-text-light: #cfcfcf;
+  --item-order-btn: #2ebd85;
+}
+/* HERO */
+.hero {
+  position: relative;
+}
+
+.hero--bgi {
+  display: block;
+  background-image: url(/images/investor/background-image/MINER.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  max-width: 1250px;
+  height: 740px;
+  left: 0;
+  right: 0;
+  top: -32%;
+  margin: 0 auto;
+  position: absolute;
+}
+.breadcrumbs p {
+  color: var(--accent-title-light);
+}
+.hero-text.hero-top {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.hero-text > .span-accent {
+  color: var(--accent-light);
+}
+.hero-text > .span-italic {
+  font-style: italic;
+}
+.breadcrumbs-lower-box {
+  margin: 0 auto;
+  margin-top: 90px;
+  border: 1px solid #373737;
+  border-radius: 50px;
+  height: max-content;
+}
+.hero-text.text-left {
+  text-align: left;
+  padding: 50px 24px;
+  margin: 0;
+}
+.span-semibold {
+  font-weight: 600;
+}
+
+/*  ADVANTAGES */
+
+.advantages-main-box {
+  display: flex;
+  gap: 36px;
+  margin-top: 70px;
+}
+
+.left-image {
+  margin-top: 60px;
+  margin-bottom: 55px;
+  display: flex;
+  flex-basis: 15%;
+  flex-direction: column;
+}
+.image-item {
+  display: flex;
+  margin: 0 auto;
+}
+.image-item img {
+  height: 100%;
+  width: auto;
+}
+
+.advantages-box.column-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  gap: 90px;
+  flex-basis: calc(85% - 36px);
+}
+.advantages-box--item.left-text-box {
+  text-align: left;
+  align-items: start;
+  border-radius: 48px;
+  position: relative;
+}
+
+.advantages-box--item h2 {
+  font-size: clamp(14px, 2vw, 24px);
+  font-weight: 600;
+  color: var(--accent-title-light);
+  margin: 40px 0 25px 50px;
+}
+
+.advantages-box--item.left-text-box > .column-item-text {
+  margin: 0;
+  font-size: clamp(10px, 2vw, 16px);
+  font-weight: 300;
+  color: var(--accent-text-light);
+  margin-bottom: 30px;
+  margin-left: 50px;
+  padding-right: 30px;
+}
+
+.advantages-box--item.left-text-box > .column-item--result {
+  font-style: italic;
+  margin-bottom: 25px;
+  text-align: left;
+  color: #ffcd00;
+}
+
+@media (max-width: 500px) {
+  .advantages-main-box {
+    gap: 20px;
+    margin-top: 40px;
+  }
+  .advantages-box.column-box {
+    gap: 45px;
+    flex-basis: 100%;
+  }
+  .advantages-box--item h2 {
+    margin: 20px 0 20px 25px;
+  }
+  .advantages-box--item.left-text-box > .column-item-text {
+    margin: 0 15px 20px 25px;
+    padding: 0;
+  }
+  .left-image {
+    display: none;
+  }
+}
