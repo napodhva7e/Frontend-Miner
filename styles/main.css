@@ -306,10 +306,7 @@ a {
   align-items: center;
 }
 .main-item--specifications {
-  position: absolute;
-  right: 20px;
-  top: 0;
-  font-size: clamp(14px, 2vw, 22px);
+  font-size: clamp(10px, 2vw, 22px);
   font-weight: 400;
 }
 .specifitations--time {
@@ -354,11 +351,10 @@ a {
   margin-top: 15px;
 }
 .main-item--price {
-  margin: 0;
-  font-size: clamp(18px, 5vw, 28px);
+  font-size: clamp(16px, 5vw, 28px);
   font-weight: 600;
   color: var(--accent-title-light);
-  margin: 10px 0;
+  margin: 4px 0;
 }
 .main-item-info {
   margin: 0;
@@ -1344,9 +1340,7 @@ a {
   .main-box {
     grid-template-rows: repeat(3, 350px);
   }
-  .main-item--specifications {
-    right: 30px;
-  }
+
   .relevant-item--specifications {
     left: 28.32vw;
     right: unset;
@@ -1435,9 +1429,6 @@ a {
   .advantages-box {
     grid-template-rows: repeat(2, 150px);
   }
-  .main-item--specifications {
-    right: 6.5vw;
-  }
   .main-box {
     display: none;
     grid-template-columns: repeat(1, 1fr);
@@ -1511,10 +1502,10 @@ a {
     padding: 0 6px;
   }
   .specifitations--time {
-    padding: 8px 0px 8px 30px;
+    padding: 6px 10px 6px 20px;
   }
   .specifications--power {
-    padding: 8px 0px 8px 30px;
+    padding: 6px 10px 6px 20px;
   }
   .mining-trailer--link {
     padding: 5px;

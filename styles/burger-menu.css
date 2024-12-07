@@ -8,6 +8,7 @@
   background-color: transparent;
   cursor: pointer;
   margin-left: 10px;
+  display: none;
 }
 .drop-menu {
   position: relative;
@@ -48,6 +49,9 @@
 @media (max-width: 1024px) {
   .drop-menu {
     display: inline-block;
+  }
+  .btn-menu {
+    display: block;
   }
 }
 
