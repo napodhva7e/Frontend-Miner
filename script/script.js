@@ -82,3 +82,6 @@ window.onclick = function (event) {
     }
   }
 };
+
+// FAQ 
+

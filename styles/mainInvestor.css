@@ -119,6 +119,272 @@
   color: #ffcd00;
 }
 
+.advantages-text {
+  font-size: clamp(16px, 2vw, 30px);
+  font-weight: 500;
+  color: var(--accent-title-light);
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 900px;
+}
+.advantages-text > .span-accent {
+  color: var(--accent-light);
+}
+
+/* FAQ */
+
+.faq {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 120px;
+  position: relative;
+}
+.advantages--bgi.section-bg-img.faq-bg-image {
+  display: block;
+  background-image: url(/images/investor/background-image/FAQ.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  max-width: 1800px;
+  height: 650px;
+  left: 0;
+  right: 0;
+  top: -50%;
+  margin: 0 auto;
+  position: absolute;
+}
+
+details {
+  background-color: transparent;
+  border-radius: 4px;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  margin-top: 30px;
+  color: var(--accent-text-light);
+  font-size: clamp(14px, 1.5vw, 22px);
+  font-weight: 300;
+}
+
+summary {
+  cursor: pointer;
+  text-transform: uppercase;
+  color: var(--accent-title-light);
+  font-size: clamp(16px, 2vw, 24px);
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--accent-light);
+  font-weight: 400;
+  display: flex;
+  gap: 12px;
+}
+summary::after {
+  content: "";
+  display: block;
+  background-image: url(/images/investor/icons/faq-triangle.svg);
+  width: 25px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 4px;
+  transform: rotate(-90deg);
+  transition: 0.3s ease;
+}
+summary::-weblit-details-marker {
+  display: none;
+}
+details[open] {
+  background-color: transparent;
+}
+details[open] > summary::after {
+  /* content: "";
+  display: block;
+  background-image: url(/images/investor/icons/faq-triangle.svg);
+  width: 25px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain; */
+  margin-top: 7px;
+  transform: rotate(0deg);
+}
+
+.FAQ-text {
+  line-height: 150%;
+}
+.FAQ-box-item {
+  margin-top: 60px;
+}
+.advantages-box--item > .hero-text.hero-top {
+  margin: 35px 20px;
+  font-size: clamp(12px, 1.5vw, 20px);
+}
+.span-italic.FAQ-span-italic {
+  color: var(--accent-light);
+}
+
+/* ADVANTAGE WORK */
+
+.investors--bgi.section-bg-img.invest-advantage-bgi {
+  background-image: url(/images/investor/background-image/Rectangle.svg);
+  width: 100%;
+  max-width: 1400px;
+  height: 445px;
+  left: 0;
+  right: 0;
+  top: 10%;
+  margin: 0 auto;
+}
+.advantages-work-wrapper {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.advantages--bgi.section-bg-img.invest-bg-image {
+  display: block;
+  background-image: url(/images/investor/background-image/ПРЕИМУЩЕСТВА.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  max-width: 1750px;
+  height: 250px;
+  left: 0;
+  right: 0;
+  top: -8%;
+  margin: 0 auto;
+  position: absolute;
+}
+.advantages-work--item {
+  font-size: clamp(10px, 1.5vw, 14px);
+  color: var(--accent-text-light);
+  font-weight: 300;
+  text-align: left;
+  padding: 0 20px 0 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.advantages-work--item > .investors-box-icon {
+  max-width: 110px;
+  flex-basis: 30%;
+  margin: 0 auto;
+}
+.work-item-text {
+  flex-basis: calc(90% - 15px);
+}
+.advantages-work--item h3 {
+  color: var(--accent-title-light);
+  font-weight: 400;
+  font-size: clamp(14px, 2vw, 20px);
+}
+.advantages-work--item > .investors-box-icon > .investors-icon {
+  height: 110px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.advantages-work-wrapper
+  > .advantages-work--item:nth-child(1)
+  > .investors-box-icon
+  > .investors-icon {
+  background-image: url(/images/investor/icons/Безопасность@4x.svg);
+}
+.advantages-work-wrapper
+  > .advantages-work--item:nth-child(2)
+  > .investors-box-icon
+  > .investors-icon {
+  background-image: url(/images/investor/icons/Рентабельность@4x.svg);
+}
+.advantages-work-wrapper
+  > .advantages-work--item:nth-child(3)
+  > .investors-box-icon
+  > .investors-icon {
+  background-image: url(/images/investor/icons/Индивидуальный\ подход@4x.svg);
+}
+
+/* Invest Type */
+
+.placement-equipment--box.invest-type-box {
+  margin-top: 40px;
+}
+.placement-equipment--box--item.invest-type {
+  width: 100%;
+  max-width: 550px;
+  position: relative;
+  overflow: hidden;
+  min-height: 160px;
+}
+.invest-type-bgi {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+.invest-type-bgi img {
+  background-size: cover;
+}
+
+.placement-equipment--box--item.invest-type h3 {
+  margin-top: 30px;
+  font-size: clamp(18px, 2vw, 32px);
+}
+.placement-equipment-price1.inves-type-text {
+  margin-bottom: 25px;
+}
+
+/* collect investment */
+.collect-investment {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+.collect-investment-wrapper {
+  text-align: center;
+  color: var(--accent-title-light);
+}
+.collect-investment-title {
+  color: var(--accent-light);
+  font-size: clamp(26px, 5vw, 45px);
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+.number-percentages {
+  font-size: clamp(50px, 6vw, 80px);
+  color: var(--accent-light);
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+.vertival-bar {
+  border: 1px solid #373737;
+  width: 100%;
+  max-width: 1000px;
+  height: 18px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.line-bar {
+  border-radius: 10px;
+  height: 100%;
+  width: 25%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 205, 0, 0.1) 0%,
+    rgba(255, 205, 0, 1) 100%
+  );
+}
+.hero-text.hero-top.collect-invesment-text {
+  font-size: clamp(14px, 2vw, 20px);
+  margin-bottom: 45px;
+}
+.ready-text p {
+  color: var(--accent-text-light);
+  font-weight: 400;
+  font-size: clamp(14px, 2vw, 20px);
+}
+
 @media (max-width: 500px) {
   .advantages-main-box {
     gap: 20px;
@@ -137,5 +403,15 @@
   }
   .left-image {
     display: none;
+  }
+  .advantages-box--item > .hero-text.hero-top {
+    margin: 20px 10px;
+  }
+  .advantages-work--item {
+    align-items: center;
+    padding: 0 10px 0 10px;
+  }
+  .advantages-work--item > .investors-box-icon > .investors-icon {
+    height: 60px;
   }
 }
