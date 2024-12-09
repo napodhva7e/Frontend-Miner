@@ -20,6 +20,9 @@ a {
   text-decoration: none;
 }
 
+.scroll-margin {
+  scroll-margin-top: 150px;
+}
 /* HEADER */
 .header {
   background-color: var(--accent-dark-1c);
@@ -260,7 +263,7 @@ a {
 
 /* MAIN */
 .main {
-  padding-top: 8.7vw;
+  margin-top: 8.7vw;
   position: relative;
 }
 
@@ -301,7 +304,7 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 440px);
-  gap: 4.35vw 5.44vw;
+  gap: 100px 60px;
 }
 .main-box--item {
   position: relative;
@@ -389,7 +392,7 @@ a {
 
 /* RELEVANT */
 .relevant-system {
-  margin-top: 3.48vw;
+  margin-top: 100px;
   background-color: var(--accent-dark-1c);
 }
 .relevant-box--title {
@@ -445,7 +448,7 @@ a {
 /* RATE */
 
 .rate {
-  padding-top: 10.33vw;
+  margin-top: 10.33vw;
   position: relative;
 }
 
@@ -537,7 +540,7 @@ a {
 /* PLACEMENT EQUIPMENT */
 
 .placement-equipment {
-  padding-top: 5.44vw;
+  margin-top: 5.44vw;
   margin-bottom: 5.44vw;
   position: relative;
 }
@@ -721,7 +724,7 @@ a {
 /* INVESTORS */
 
 .investors {
-  padding-top: 6.53vw;
+  margin-top: 6.53vw;
   position: relative;
 }
 .investors--wrapper {
@@ -873,7 +876,7 @@ a {
 /* FORM */
 
 .form {
-  padding-top: 10vw;
+  margin-top: 10vw;
   position: relative;
 }
 .form--wrapper {
@@ -986,7 +989,7 @@ a {
 
 /* CONTACTS */
 .contacts {
-  padding-top: 4.35vw;
+  margin-top: 4.35vw;
   margin-bottom: 3.26vw;
 }
 .contacts--wrapper {
@@ -1520,6 +1523,9 @@ a {
     width: 200px;
     margin: 0 auto;
     margin-bottom: 20px;
+  }
+  .scroll-margin {
+    scroll-margin-top: 110px;
   }
 }
 

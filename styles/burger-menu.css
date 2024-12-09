@@ -45,7 +45,9 @@
 .show {
   display: inline-block;
 }
-
+.drop-link {
+  transition: 0.4s ease-in-out;
+}
 @media (max-width: 1024px) {
   .drop-menu {
     display: inline-block;
