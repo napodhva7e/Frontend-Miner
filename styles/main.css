@@ -132,7 +132,7 @@ a {
 
 .breadcrumbs--link-box a {
   color: var(--accent-dark-1e);
-  font-size: clamp(10px, 1.5vw, 14px);
+  font-size: clamp(8px, 1.5vw, 14px);
   font-weight: 600;
   padding: 13px 42px;
   background-color: var(--accent-light);
@@ -141,7 +141,7 @@ a {
   z-index: 1;
   margin: 0 auto;
   width: 100%;
-  max-width: 180px;
+  max-width: 240px;
 }
 .breadcrumbs--link-box a:hover {
   color: var(--accent-title-light);
@@ -459,7 +459,7 @@ a {
   height: 350px;
   position: absolute;
   background-image: url(../images/background-image/тарифы-на-электроэнергию.svg);
-  top: 0;
+  top: -20%;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -540,7 +540,7 @@ a {
 /* PLACEMENT EQUIPMENT */
 
 .placement-equipment {
-  margin-top: 5.44vw;
+  margin-top: 120px;
   margin-bottom: 5.44vw;
   position: relative;
 }
@@ -555,7 +555,7 @@ a {
   height: 350px;
   position: absolute;
   background-image: url(../images/background-image/размещение-оборудования.svg);
-  top: -12px;
+  top: -12%;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -846,12 +846,31 @@ a {
 
 .investors-box--links {
   display: flex;
-  flex-grow: 1;
   justify-content: space-between;
   margin-bottom: 20px;
   align-items: center;
 }
 .investors--link {
+  display: block;
+  font-size: clamp(10px, 1.5vw, 16px);
+  font-weight: 600;
+  width: 100%;
+  max-width: 293px;
+  text-align: center;
+  background-color: var(--accent-light);
+  color: var(--accent-dark-1e);
+  padding: 0.76vw 1.09vw;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+  margin: 0 20px;
+}
+.investors--link:hover {
+  outline: 1px solid var(--accent-light);
+  color: var(--accent-title-light);
+  background-color: transparent;
+}
+
+.investors--link--btn {
   display: block;
   font-size: clamp(10px, 1.5vw, 16px);
   font-weight: 600;
@@ -864,10 +883,12 @@ a {
   text-transform: uppercase;
   transition: 0.3s ease;
   margin: 0 20px;
-  z-index: 1;
+  border: none;
+  outline: none;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
-
-.investors--link:hover {
+.investors--link--btn:hover {
   outline: 1px solid var(--accent-light);
   color: var(--accent-title-light);
   background-color: transparent;
@@ -1082,8 +1103,8 @@ a {
   color: var(--accent-title-light);
   font-weight: 300;
   font-size: clamp(17px, 2vw, 32px);
-  padding-top: 15px;
-  margin-bottom: 15px;
+  padding-top: 35px;
+  margin-bottom: 25px;
   text-transform: uppercase;
 }
 .newsletter--wrapper p {
@@ -1129,7 +1150,7 @@ a {
 /* FOOTER */
 
 .footer {
-  margin-top: 20px;
+  margin-top: 50px;
   padding-bottom: 15px;
   position: relative;
 }
@@ -1154,7 +1175,7 @@ a {
   justify-content: space-around;
 }
 .logo.footer-logo {
-  font-size: clamp(32px, 2.5vw, 40px);
+  font-size: clamp(32px, 6.5vw, 80px);
   background-image: linear-gradient(
     90deg,
     rgba(255, 205, 0, 0.5) 0%,
@@ -1245,7 +1266,7 @@ a {
 .footer-partners {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 30px;
   margin-top: 5px;
 }
 
@@ -1498,9 +1519,15 @@ a {
     gap: 15px;
   }
   .investors--link {
-    max-width: 250px;
+    max-width: 200px;
     width: 60vw;
     height: 25px;
+    align-content: center;
+  }
+  .investors--link--btn {
+    max-width: 200px;
+    width: 62vw;
+    height: 29px;
     align-content: center;
   }
   .footer-partners {

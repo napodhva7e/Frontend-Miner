@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="slider/style.css">
     <link rel="stylesheet" href="styles/language-button.css">
     <link rel="stylesheet" href="styles/burger-menu.css">
+    <link rel="stylesheet" href="styles/popUp.css">
     
       <!-- <title>Responsive Card Slider</title> -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
@@ -528,7 +529,8 @@
           <div class="main-info--box">
             <h3 class="h3-info-title">Трейлер-майнинг</h3>
             <h2 class="h2-info-title">
-              Трейлер-майнинг — ваш мобильный майнинг-проект
+              Трейлер-майнинг  — <br/>
+              ваш мобильный майнинг-проект
             </h2>
             <p class="p-info">
               Мы предлагаем уникальное решение для майнинга — мобильные <br/> трейлеры, которые можно быстро развернуть в любой точке. <br/> Это идеальный вариант для индивидуальных проектов и <br/> масштабируемого бизнеса, позволяющий легко перемещать <br/> оборудование в места с лучшими тарифами на электроэнергию
@@ -609,12 +611,46 @@
               и&nbsp;быстрый возврат инвестиций”</h1>
             <div class="investors-box--links">
               <a href="investor.html" class="investors--link">инвесторам</a>
-              <a href="#form" class="investors--link hero-btn">Узнать больше о проектах</a>
+              <button href="" class="investors--link--btn section__button">Узнать больше о проектах</button>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <div class="modal">
+      <div class="modal__main">
+        <!-- <div class="form-container modal__container"> -->
+          <div class="modal__line line-up"></div>
+          <h1>Свяжитесь с <span>MINER</span></h1>
+           <div class="form-box modal__box">
+            <div class="form-box--wrapper modal__box__wrapper">
+              <div class="form-box--item modal__box__item">
+                <h3 class="form-box-input-title modal__input__title">Имя</h3>
+                <input type="text" placeholder="Имя">
+              </div>
+              <div class="form-box--item modal__box__item">
+                <h3 class="form-box-input-title modal__input__title">Электронная почта</h3>
+                <input type="email" placeholder="Электронная почта">
+              </div>
+              <div class="form-box--item modal__box__item">
+                <h3 class="form-box-input-title modal__input__title">Номер телефона</h3>
+                <input type="tel" placeholder="Номер телефона">
+              </div>
+              <div class="form-box--item modal__box__item">
+                <h3 class="form-box-input-title modal__input__title">Сообщение</h3>
+                <input type="text" placeholder="Сообщение">
+              </div>  
+
+              <button class="btn-primary form--btn modal__btn">Отправить</button>
+            </div>
+          </div>
+          <div class="modal__line line-down"></div>
+        <!-- </div> -->
+        <button class="modal__close">&#10006</button>
+      </div>
+    </div>
+
 
     <section class="form scroll-margin" id="form">
       <div class="advantages--bgi form--bgi section-bg-img"></div>
@@ -736,9 +772,10 @@
         <p class="footer-copyrights">© 2024 MINER. Все права защищены</p>
       </div>
     </footer>   
+
     <a href="#TopLineId" class="button-up hidden" id="btnUp">Наверх</a>
 
-    <script src="script/script.js"></script>
-    <script src="slider/slider.js"></script>
+    <script src="script/script.js" defer></script>
+    <script src="slider/slider.js" defer></script>
   </body>
 </html>
