@@ -260,7 +260,7 @@ a {
 
 /* MAIN */
 .main {
-  margin-top: 8.7vw;
+  padding-top: 8.7vw;
   position: relative;
 }
 
@@ -445,7 +445,7 @@ a {
 /* RATE */
 
 .rate {
-  margin-top: 10.33vw;
+  padding-top: 10.33vw;
   position: relative;
 }
 
@@ -456,7 +456,7 @@ a {
   height: 350px;
   position: absolute;
   background-image: url(../images/background-image/тарифы-на-электроэнергию.svg);
-  top: -24%;
+  top: 0;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -537,7 +537,7 @@ a {
 /* PLACEMENT EQUIPMENT */
 
 .placement-equipment {
-  margin-top: 5.44vw;
+  padding-top: 5.44vw;
   margin-bottom: 5.44vw;
   position: relative;
 }
@@ -552,7 +552,7 @@ a {
   height: 350px;
   position: absolute;
   background-image: url(../images/background-image/размещение-оборудования.svg);
-  top: -12%;
+  top: -12px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -721,7 +721,7 @@ a {
 /* INVESTORS */
 
 .investors {
-  margin-top: 6.53vw;
+  padding-top: 6.53vw;
   position: relative;
 }
 .investors--wrapper {
@@ -747,7 +747,6 @@ a {
   background-color: rgba(28, 28, 28, 0.5);
   border: 1px solid #373737;
   width: 100%;
-  margin-bottom: 10.88vw;
 }
 
 .investors-box h2 {
@@ -874,7 +873,7 @@ a {
 /* FORM */
 
 .form {
-  margin-bottom: 4.35vw;
+  padding-top: 10vw;
   position: relative;
 }
 .form--wrapper {
@@ -882,7 +881,7 @@ a {
 }
 .form--bgi {
   background-image: url(../images/background-image/контакты.svg);
-  top: -8%;
+  top: 0;
   background-repeat: no-repeat;
   background-size: contain;
   margin: 0 auto;
@@ -987,6 +986,7 @@ a {
 
 /* CONTACTS */
 .contacts {
+  padding-top: 4.35vw;
   margin-bottom: 3.26vw;
 }
 .contacts--wrapper {
