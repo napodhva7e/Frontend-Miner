@@ -385,7 +385,7 @@ a {
 
 .btn-primary {
   color: var(--accent-title-light);
-  font-size: clamp(10px, 1.5vw, 18px);
+  font-size: clamp(12px, 1.5vw, 16px);
   font-weight: 600;
   margin-top: 15px;
   padding: 18px 79px;
@@ -403,7 +403,7 @@ a {
 
 /* RELEVANT */
 .relevant-system {
-  margin-top: 100px;
+  margin-top: 30px;
   background-color: var(--accent-dark-1c);
 }
 .relevant-box--title {
@@ -1463,9 +1463,6 @@ a {
     left: 9.32vw;
     right: unset;
   }
-  .btn-primary {
-    padding: 10px 20px;
-  }
   .rate-box > .rate-box--item:nth-child(4) {
     grid-area: d;
     text-align: right;
@@ -1541,6 +1538,9 @@ a {
   }
   .scroll-margin {
     scroll-margin-top: 110px;
+  }
+  .relevant-system {
+    margin-top: 0;
   }
 }
 

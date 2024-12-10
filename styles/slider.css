@@ -1,0 +1,83 @@
+.slider-box {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+  height: 550px;
+}
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.card-image {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  padding: 3px;
+}
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.name {
+  font-size: clamp(18px, 4vw, 24px);
+  font-weight: 500;
+  color: #ffcd00;
+  font-weight: 500;
+  margin-top: 0;
+}
+.description {
+  font-size: clamp(14px, 1.5vw, 16px);
+  color: #eaecef;
+  text-align: center;
+  font-weight: 300;
+  font-style: italic;
+}
+.swiper-navBtn {
+  position: absolute;
+  width: 4%;
+  height: 40px;
+  top: 40%;
+}
+
+.swip-button-next {
+  right: 0;
+  background-image: url(/images/icons/next-arrow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.swip-button-prev {
+  left: 0;
+  background-image: url(/images/icons/prev-arrow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+  .swiper-navBtn {
+    display: none;
+  }
+}
