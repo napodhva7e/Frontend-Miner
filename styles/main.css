@@ -162,6 +162,26 @@ a {
   color: var(--accent-dark-1e);
   background-color: var(--accent-light);
 }
+.breadcrumbs--link-box button {
+  color: var(--accent-dark-1e);
+  font-size: clamp(8px, 1.5vw, 14px);
+  font-weight: 600;
+  padding: 10px 0;
+  background-color: var(--accent-light);
+  text-transform: uppercase;
+  transition: 0.3s ease;
+  z-index: 1;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 324px;
+  border: none;
+  cursor: pointer;
+}
+.breadcrumbs--link-box button:hover {
+  background-color: transparent;
+  border: 1px solid var(--accent-light);
+  color: var(--accent-title-light);
+}
 /* ADVANTAGES */
 
 .advantages {
@@ -619,6 +639,7 @@ a {
   padding: 0.7vw 2.07vw;
   background-color: var(--accent-light);
   color: var(--accent-dark-1e);
+  border: none;
   text-transform: uppercase;
   transition: 0.3s ease;
   z-index: 1;
@@ -716,20 +737,22 @@ a {
 }
 
 .mining-trailer--link {
-  font-size: clamp(10px, 2vw, 16px);
+  font-size: clamp(8px, 2vw, 16px);
   text-transform: uppercase;
   font-weight: 600;
   text-align: center;
-  padding: 1vw 2.7vw;
   background-color: var(--accent-light);
   color: var(--accent-dark-1e);
   transition: 0.3s ease;
   display: block;
-  max-width: 411px;
+  min-width: 200px;
+  max-width: 460px;
   margin: 0 auto;
   margin-top: 15px;
   z-index: 1;
   position: relative;
+  border: none;
+  padding: 10px 20px;
 }
 
 .mining-trailer--link:hover {
@@ -1521,7 +1544,7 @@ a {
     align-content: center;
   }
   .investors--link--btn {
-    max-width: 200px;
+    max-width: 213px;
     width: 62vw;
     height: 29px;
     align-content: center;
@@ -1538,10 +1561,6 @@ a {
   }
   .specifications--power {
     padding: 6px 10px 6px 20px;
-  }
-  .mining-trailer--link {
-    padding: 5px;
-    width: 180px;
   }
   .relevant-btn-primary {
     width: 240px;

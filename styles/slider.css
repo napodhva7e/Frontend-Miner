@@ -58,6 +58,7 @@
   width: 4%;
   height: 40px;
   top: 40%;
+  cursor: pointer;
 }
 
 .swip-button-next {

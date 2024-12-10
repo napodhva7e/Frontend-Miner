@@ -108,7 +108,7 @@ const scrollController = {
 };
 
 const modalController = ({ modal, btnOpen, btnClose, time = 300 }) => {
-  const buttonElem = document.querySelector(btnOpen);
+  const buttonElems = document.querySelectorAll(btnOpen);
   const modalElem = document.querySelector(modal);
 
   modalElem.style.cssText = `
@@ -143,8 +143,9 @@ const modalController = ({ modal, btnOpen, btnClose, time = 300 }) => {
     scrollController.disabledScroll();
   };
 
-  buttonElem.addEventListener("click", openModal);
-
+  buttonElems.forEach((btn) => {
+    btn.addEventListener("click", openModal);
+  });
   modalElem.addEventListener("click", closeModal);
 };
 
