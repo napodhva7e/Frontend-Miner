@@ -229,6 +229,7 @@ a {
   background-image: url(../images/advantages-icon/Надежность@4x2.png);
   background-repeat: no-repeat;
   background-size: contain;
+  filter: brightness(1.2);
 }
 .advantages-box
   > .advantages-box--item:nth-child(2)
@@ -238,6 +239,7 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   margin-left: 1.09vw;
+  filter: brightness(1.5);
 }
 .advantages-box
   > .advantages-box--item:nth-child(3)
@@ -246,6 +248,7 @@ a {
   background-image: url(../images/advantages-icon/Гибкость@4x1.png);
   background-repeat: no-repeat;
   background-size: contain;
+  filter: brightness(1.7);
 }
 .advantages-box
   > .advantages-box--item:nth-child(4)
@@ -254,6 +257,7 @@ a {
   background-image: url(../images/advantages-icon/Лучшие\ предложения@4x1.png);
   background-repeat: no-repeat;
   background-size: contain;
+  filter: brightness(2);
 }
 
 .advantages-box--item h5 {
