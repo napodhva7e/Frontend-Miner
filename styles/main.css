@@ -229,7 +229,6 @@ a {
   background-image: url(../images/advantages-icon/Надежность@4x2.png);
   background-repeat: no-repeat;
   background-size: contain;
-  filter: brightness(1.2);
 }
 .advantages-box
   > .advantages-box--item:nth-child(2)
@@ -239,7 +238,6 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   margin-left: 1.09vw;
-  filter: brightness(1.5);
 }
 .advantages-box
   > .advantages-box--item:nth-child(3)
@@ -248,7 +246,6 @@ a {
   background-image: url(../images/advantages-icon/Гибкость@4x1.png);
   background-repeat: no-repeat;
   background-size: contain;
-  filter: brightness(1.7);
 }
 .advantages-box
   > .advantages-box--item:nth-child(4)
@@ -257,7 +254,6 @@ a {
   background-image: url(../images/advantages-icon/Лучшие\ предложения@4x1.png);
   background-repeat: no-repeat;
   background-size: contain;
-  filter: brightness(2);
 }
 
 .advantages-box--item h5 {
@@ -977,7 +973,7 @@ a {
   width: 600px;
   flex-direction: column;
   z-index: 1;
-  gap: 15px;
+  gap: 20px;
 }
 
 .form-box--item {
@@ -1000,11 +996,12 @@ a {
   font-weight: 400;
   font-size: clamp(14px, 1.5vw, 22px);
   width: 100%;
-  padding-left: 4.18vw;
+  padding-left: 50px;
+  padding-bottom: 10px;
   z-index: 1;
 }
 .form-box--item input:focus {
-  color: var(--accent-title-light);
+  color: #a8a8a8;
   outline: none;
 }
 .form--btn {
@@ -1058,7 +1055,7 @@ a {
   background-image: url(../images/contacts/top-line.svg);
   position: absolute;
   height: 2px;
-  width: 7vw;
+  width: 96px;
   top: -5px;
   left: 0;
   right: 0;
@@ -1078,23 +1075,21 @@ a {
 .contacts--item h3::before {
   content: "";
   display: block;
-  width: 5vw;
-  height: 10vw;
-  max-height: 4vw;
+  width: 3vw;
+  height: 7vw;
+  max-height: 2vw;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .contacts-box > .contacts--item:nth-child(1) h3::before {
   background-image: url(../images/contacts/Почта@4x.svg);
-  margin-right: 10px;
 }
 .contacts-box > .contacts--item:nth-child(2) h3::before {
   background-image: url(../images/contacts/Телефон@4x.svg);
-  margin-right: 10px;
 }
 .contacts-box > .contacts--item:nth-child(3) h3::before {
   background-image: url(../images/contacts/Геолокация@4x.svg);
-  height: 70px;
+  height: 50px;
 }
 .contacts--item a {
   font-size: clamp(8px, 1.5vw, 22px);
@@ -1283,7 +1278,7 @@ a {
 }
 .footer-partners {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 30px;
   margin-top: 5px;
 }
@@ -1432,6 +1427,10 @@ a {
   .section-bg-img {
     display: none;
   }
+  .contacts--item::before {
+    width: 45px;
+    height: 1.4px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -1521,6 +1520,7 @@ a {
   }
   .footer-partners {
     gap: 8px;
+    flex-wrap: wrap;
   }
   .container {
     padding: 0 6px;
