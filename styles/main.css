@@ -47,6 +47,9 @@ a {
   gap: 35px;
   justify-content: space-between;
 }
+.logo-link {
+  display: flex;
+}
 .logo {
   display: flex;
   font-size: 24px;
@@ -1342,8 +1345,10 @@ a {
     text-transform: uppercase;
     color: var(--accent-title-light);
   }
-  .logo {
+  .logo-link {
     flex-grow: 1;
+  }
+  .logo {
     background-image: linear-gradient(
       90deg,
       rgba(255, 205, 0, 0.5) 0%,
