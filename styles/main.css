@@ -546,7 +546,7 @@ a {
   background-color: var(--accent-light);
   color: var(--accent-dark-1e);
   font-weight: 600;
-  font-size: clamp(12px, 1.5vw, 20px);
+  font-size: clamp(10px, 1.5vw, 20px);
 }
 .rate-btn--calc:hover {
   outline: 1px solid var(--accent-light);
@@ -1283,13 +1283,13 @@ a {
 }
 .footer-partners {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 30px;
   margin-top: 5px;
 }
 
 .footer-partners a > img {
-  min-width: 65px;
+  min-width: 60px;
   width: 8vw;
   max-width: 160px;
   transition: 0.5s ease;
@@ -1392,6 +1392,9 @@ a {
   .investors-icon {
     height: 8vmax;
   }
+  .rate-btn--calc {
+    padding: 10px 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1411,6 +1414,7 @@ a {
   }
   .placement-equipment--box {
     flex-wrap: wrap;
+    padding: 0 15px;
   }
   .mining-trailer-box {
     grid-template-rows: 130px;
@@ -1524,7 +1528,7 @@ a {
   }
   .footer-partners {
     gap: 8px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   .container {
     padding: 0 6px;
@@ -1540,9 +1544,11 @@ a {
     width: 180px;
   }
   .relevant-btn-primary {
-    width: 200px;
+    width: 240px;
     margin: 0 auto;
     margin-bottom: 20px;
+    padding: 10px 0;
+    font-size: clamp(8px, 1.5vw, 20px);
   }
   .scroll-margin {
     scroll-margin-top: 110px;
@@ -1550,11 +1556,17 @@ a {
   .relevant-system {
     margin-top: 0;
   }
+  .breadcrumbs--link-box a {
+    padding: 10px 0;
+  }
 }
 
 @media (max-width: 420px) {
   .menu-list {
     width: 100%;
     max-width: 420px;
+  }
+  .footer-partners {
+    flex-direction: column;
   }
 }
