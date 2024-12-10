@@ -10,6 +10,17 @@
   margin-left: 10px;
   display: none;
 }
+.menu__close__btn {
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #ffcd00;
+  font-size: 26px;
+  background-color: transparent;
+  margin-top: 30px;
+}
+
 .drop-menu {
   position: relative;
   display: none;
@@ -27,6 +38,7 @@
   z-index: 1;
   padding: 20px 10px;
   text-align: center;
+  transition: 1s ease-in-out;
 }
 
 .dropdown-content-menu a {
@@ -44,10 +56,9 @@
 
 .show {
   display: inline-block;
+  transition: 1s ease-in-out;
 }
-.drop-link {
-  transition: 0.4s ease-in-out;
-}
+
 @media (max-width: 1024px) {
   .drop-menu {
     display: inline-block;

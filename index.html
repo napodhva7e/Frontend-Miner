@@ -27,6 +27,7 @@
     <header class="header">
       <div class="drop-menu">
         <div id="drop-menu" class="dropdown-content-menu">
+          <button class="menu__close__btn" onclick="menuClose()">&#10006</button>
           <a href="index.html" class="hero-btn">О нас</a>
           <a href="#main" class="hero-btn">Оборудование</a>
           <a href="#rate" class="hero-btn">Тарифы на электроэнергию</a>
@@ -38,9 +39,8 @@
       <div class="container">
         <div class="header--wrapper">
 
-          <button onclick="menuPopUp()" class="btn-menu"></button>
-          <div class="drop-menu">
-          </div>
+          <button onclick="menuOpen()" class="btn-menu"></button>
+          
 
           <span class="logo">miner</span>
           <nav class="nav header-nav">
@@ -59,14 +59,14 @@
           <div class="dropdown">
             <button onclick="languagePopUp()" class="dropbtn"></button>
             <div id="myDropdown" class="dropdown-content">
-              <a href="#">Русский язык</a>
-              <a href="#">English language</a>
-              <a href="#">Eesti keel</a>
-              <a href="#">Қазақ тілі</a>
-              <a href="#">Norsk språk</a>
-              <a href="#">Nederlandse taal</a>
-              <a href="#">Svenska språket</a>
-              <a href="#">Suomen kieli</a>
+              <a href="#">Русский</a>
+              <a href="#">English</a>
+              <a href="#">Eesti</a>
+              <a href="#">Қазақ</a>
+              <a href="#">Norsk</a>
+              <a href="#">Nederlandse</a>
+              <a href="#">Svenska</a>
+              <a href="#">Suomen</a>
             </div>
           </div>
           
@@ -90,7 +90,7 @@
             масштаба
           </p>
           <div class="breadcrumbs--link-box">
-            <a href="#main" class="hero-btn">Выбрать оборудование</a>
+            <a href="#main" class="hero-btn revers-btn">Выбрать оборудование</a>
             <a href="#form" class="hero-btn">Бесплатная консультация</a>
           </div>
         </div>
@@ -156,10 +156,10 @@
           </div>
           <div class="main-box">
             <div class="main-box--item">
-              <div class="main-item--specifications">
+              <!-- <div class="main-item--specifications">
                 <p class="specifitations--time">110 TH/s</p>
                 <p class="specifications--power">3250W</p>
-              </div>
+              </div> -->
               <div class="main-item--img">
                 <img src="images/miner-system/Antminer S19 Pro.png" alt="" />
               </div>
@@ -171,10 +171,10 @@
               <button class="btn-primary">Заказать</button>
             </div>
             <div class="main-box--item">
-              <div class="main-item--specifications">
+              <!-- <div class="main-item--specifications">
                 <p class="specifitations--time">100 TH/s</p>
                 <p class="specifications--power">3400W</p>
-              </div>
+              </div> -->
               <div class="main-item--img">
                 <img src="images/miner-system/Whatsminer M30S.png" alt="" />
               </div>
@@ -186,10 +186,10 @@
               <button class="btn-primary">Заказать</button>
             </div>
             <div class="main-box--item">
-              <div class="main-item--specifications">
+              <!-- <div class="main-item--specifications">
                 <p class="specifitations--time">14.4 GH/s</p>
                 <p class="specifications--power">3920W</p>
-              </div>
+              </div> -->
               <div class="main-item--img">
                 <img
                   class="main-item--image"
@@ -205,10 +205,10 @@
               <button class="btn-primary">Заказать</button>
             </div>
             <div class="main-box--item">
-              <div class="main-item--specifications">
+              <!-- <div class="main-item--specifications">
                 <p class="specifitations--time">13.6 GH/s</p>
                 <p class="specifications--power">3400W</p>
-              </div>
+              </div> -->
               <div class="main-item--img">
                 <img
                   src="images/miner-system/Elphapex DG 1+ 13.6G.png"
@@ -223,10 +223,10 @@
               <button class="btn-primary">Заказать</button>
             </div>
             <div class="main-box--item">
-              <div class="main-item--specifications">
+              <!-- <div class="main-item--specifications">
                 <p class="specifitations--time">11 GH/s</p>
                 <p class="specifications--power">3420W</p>
-              </div>
+              </div> -->
               <div class="main-item--img">
                 <img src="images/miner-system/Elphapex DG 1 11G.png" alt="" />
               </div>
@@ -239,10 +239,10 @@
             </div>
             <div class="main-box--item">
 
-              <div class="main-item--specifications">
+              <!-- <div class="main-item--specifications">
                 <p class="specifitations--time">9.16 GH/s</p>
                 <p class="specifications--power">3425W</p>
-              </div>
+              </div> -->
               <div class="main-item--img">
                 <img src="images/miner-system/Antminer L7.png" alt="" />
               </div>
@@ -258,10 +258,10 @@
           <div class="slider-box">
             <div class="wrapper">
               <div class="slider">
-                <div class="main-item--specifications slider-specifications">
+                <!-- <div class="main-item--specifications slider-specifications">
                   <p class="specifitations--time slider-time">110 TH/s</p>
                   <p class="specifications--power slider-power">3250W</p>
-                </div>
+                </div> -->
                 <div class="image-content">
                   <div class="card-image">
                     <img
@@ -284,10 +284,10 @@
               </div>
 
               <div class="slider">
-                <div class="main-item--specifications slider-specifications">
+                <!-- <div class="main-item--specifications slider-specifications">
                   <p class="specifitations--time slider-time">100 TH/s</p>
                   <p class="specifications--power slider-power">3400W</p>
-                </div>
+                </div> -->
                 <div class="image-content">
                   <div class="card-image">
                     <img
@@ -310,10 +310,10 @@
               </div>
 
               <div class="slider">
-                <div class="main-item--specifications slider-specifications">
+                <!-- <div class="main-item--specifications slider-specifications">
                   <p class="specifitations--time slider-time">14.4 GH/s</p>
                   <p class="specifications--power slider-power">3920W</p>
-                </div>
+                </div> -->
                 <div class="image-content">
                   <div class="card-image">
                     <img
@@ -336,10 +336,10 @@
               </div>
 
               <div class="slider">
-                <div class="main-item--specifications slider-specifications">
+                <!-- <div class="main-item--specifications slider-specifications">
                   <p class="specifitations--time slider-time">13.6 GH/s</p>
                   <p class="specifications--power slider-power">3400W</p>
-                </div>
+                </div> -->
                 <div class="image-content">
                   <div class="card-image">
                     <img
@@ -362,10 +362,10 @@
               </div>
 
               <div class="slider">
-                <div class="main-item--specifications slider-specifications">
+                <!-- <div class="main-item--specifications slider-specifications">
                   <p class="specifitations--time slider-time">11 GH/s</p>
                   <p class="specifications--power slider-power">3420W</p>
-                </div>
+                </div> -->
                 <div class="image-content">
                   <div class="card-image">
                     <img
@@ -388,10 +388,10 @@
               </div>
 
               <div class="slider">
-                <div class="main-item--specifications slider-specifications">
+                <!-- <div class="main-item--specifications slider-specifications">
                   <p class="specifitations--time slider-time">9.16 GH/s</p>
                   <p class="specifications--power slider-power">3425W</p>
-                </div>
+                </div> -->
                 <div class="image-content">
                   <div class="card-image">
                     <img
@@ -428,10 +428,10 @@
       <div class="container">
         <div class="relevant-system--wrapper">
           <div class="main-box--item relevant-box--item">
-              <div class="main-item--specifications relevant-item--specifications">
+              <!-- <div class="main-item--specifications relevant-item--specifications">
                 <p class="specifitations--time ">110 TH/s</p>
                 <p class="specifications--power ">3250W</p>
-              </div>
+              </div> -->
               <div class="main-item--img relevant-item--img">
                 <img src="images/miner-system/Antminer L9 1.png" alt="" />
               </div>
@@ -511,8 +511,8 @@
               <a href="" class="placement-equipment--box--link">узнать больше</a>
             </div>
             <div class="placement-equipment--box--item">
-              <h3>Размещение в Болгарии</h3>
-              <p class="placement-equipment-price1">Цена на электричество: 0.08 €/кВт*ч</p>
+              <h3>Размещение в Эстонии и Латвии</h3>
+              <p class="placement-equipment-price1">Цена на электричество: 0.10 €/кВт*ч</p>
               <p class="placement-equipment-price2">Преимущества: Стабильная инфраструктура 
                 и постоянный мониторинг</p>
               <a href="" class="placement-equipment--box--link">узнать больше</a>
@@ -610,7 +610,7 @@
             <h1>“Долгосрочная прибыль 
               и&nbsp;быстрый возврат инвестиций”</h1>
             <div class="investors-box--links">
-              <a href="investor.html" class="investors--link">инвесторам</a>
+              <a href="investor.html" class="investors--link revers-btn">инвесторам</a>
               <button href="" class="investors--link--btn section__button">Узнать больше о проектах</button>
             </div>
           </div>
@@ -742,21 +742,20 @@
           <div class="footer-additionaly-box">
             <nav class="footer-nav">
               <h2>НАВИГАЦИЯ:</h2>
-              <a href="" class="footer-nav--link">О нас</a>
-              <a href="" class="footer-nav--link">Оборудование</a>
-              <a href="" class="footer-nav--link">Тарифы на электроэнергию</a>
-              <a href="" class="footer-nav--link">размещение</a>
-              <a href="" class="footer-nav--link">инвесторы</a>
-              <a href="" class="footer-nav--link">контакты</a>
+              <a href="index.html" class="footer-nav--link">О нас</a>
+              <a href="#main" class="footer-nav--link hero-btn">Оборудование</a>
+              <a href="#rate" class="footer-nav--link hero-btn">Тарифы на электроэнергию</a>
+              <a href="#placement-equipment" class="footer-nav--link hero-btn">размещение</a>
+              <a href="#investors" class="footer-nav--link hero-btn">инвесторы</a>
+              <a href="#form" class="footer-nav--link hero-btn">контакты</a>
             </nav>
             <div class="footer-box">
               <div class="footer-social">
                 <h2>Социальные сети:</h2>
-                <a href="">telegram</a>
-                <a href="">instagram</a>
-                <a href="">facebook</a>
+                <a href="#">telegram</a>
+                <a href="#">instagram</a>
+                <a href="#">facebook</a>
               </div>
-              <!-- <span class="logo footer-logo additionally-logo">miner</span> -->
               <h2>НАШИ ПАРТНЕРЫ:</h2>
               <div class="footer-partners">
                 <a href="https://www.binance.com/ru" target="_blank"><img src="./images/partner-icon/Binance.svg" alt=""></a>
@@ -773,7 +772,7 @@
       </div>
     </footer>   
 
-    <a href="#TopLineId" class="button-up hidden" id="btnUp">Наверх</a>
+    <a href="#TopLineId" class="button-up hidden" id="btnUp"><img src="images/icons/Arrow-Up-Icon-Outline.png" alt=""></a>
 
     <script src="script/script.js" defer></script>
     <script src="slider/slider.js" defer></script>

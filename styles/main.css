@@ -148,7 +148,17 @@ a {
   background-color: transparent;
   outline: 1px solid var(--accent-light);
 }
-
+.breadcrumbs--link-box a.revers-btn,
+.investors-box--links a.revers-btn {
+  color: var(--accent-title-light);
+  background-color: transparent;
+  outline: 1px solid var(--accent-light);
+}
+.breadcrumbs--link-box a.revers-btn:hover,
+.investors-box--links a.revers-btn:hover {
+  color: var(--accent-dark-1e);
+  background-color: var(--accent-light);
+}
 /* ADVANTAGES */
 
 .advantages {
@@ -161,11 +171,11 @@ a {
 .advantages--bgi {
   display: block;
   width: 100%;
-  max-width: 1370px;
-  height: 300px;
+  max-width: 1600px;
+  height: 400px;
   position: absolute;
   background-image: url(../images/background-image/преимущества-miner.svg);
-  top: -25%;
+  top: -28%;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -216,7 +226,7 @@ a {
   > .advantages-box--item:first-child
   > .advantages-box-icon
   > .advantages-icon {
-  background-image: url(../images/advantages-icon/Надежность@4x2.svg);
+  background-image: url(../images/advantages-icon/Надежность@4x2.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -227,13 +237,13 @@ a {
   background-image: url(../images/advantages-icon/Умный\ подход@4x1.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  margin-left: 20px;
+  margin-left: 1.09vw;
 }
 .advantages-box
   > .advantages-box--item:nth-child(3)
   > .advantages-box-icon
   > .advantages-icon {
-  background-image: url(../images/advantages-icon/Гибкость@4x1.svg);
+  background-image: url(../images/advantages-icon/Гибкость@4x1.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -241,7 +251,7 @@ a {
   > .advantages-box--item:nth-child(4)
   > .advantages-box-icon
   > .advantages-icon {
-  background-image: url(../images/advantages-icon/Лучшие\ предложения@4x1.svg);
+  background-image: url(../images/advantages-icon/Лучшие\ предложения@4x1.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -270,8 +280,8 @@ a {
 .main--bgi {
   display: block;
   width: 100%;
-  max-width: 1400px;
-  height: 350px;
+  max-width: 1600px;
+  height: 400px;
   position: absolute;
   background-image: url(../images/background-image/оборудование-для-майнинга.svg);
   top: -9%;
@@ -305,6 +315,7 @@ a {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 440px);
   gap: 100px 60px;
+  display: none;
 }
 .main-box--item {
   position: relative;
@@ -467,14 +478,15 @@ a {
   background-size: contain;
 }
 .rate-box {
-  margin-left: 5vw;
+  margin: 0 auto;
   margin-top: 4.35vw;
   margin-bottom: 4.35vw;
   display: grid;
-  grid-template-columns: 400px 487px;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, auto);
   grid-template-areas: "a d" "b e" "c f" "g h";
   align-items: center;
+  padding: 0 3.26vw;
 }
 .rate-box--item {
   border-bottom: 1px solid #373737;
@@ -531,6 +543,7 @@ a {
   background-color: var(--accent-light);
   color: var(--accent-dark-1e);
   font-weight: 600;
+  font-size: clamp(12px, 1.5vw, 20px);
 }
 .rate-btn--calc:hover {
   outline: 1px solid var(--accent-light);
@@ -551,11 +564,11 @@ a {
 .placement-equipment--bgi {
   display: block;
   width: 100%;
-  max-width: 1400px;
-  height: 350px;
+  max-width: 1600px;
+  height: 400px;
   position: absolute;
   background-image: url(../images/background-image/размещение-оборудования.svg);
-  top: -12%;
+  top: -17%;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -564,6 +577,7 @@ a {
 }
 
 .placement-equipment--box {
+  padding: 0 40px;
   margin-top: 25px;
   display: flex;
   gap: 25px;
@@ -625,11 +639,11 @@ a {
 .mining-trailer--bgi {
   display: block;
   width: 100%;
-  max-width: 1000px;
-  height: 300px;
+  max-width: 1235px;
+  height: 400px;
   position: absolute;
   background-image: url(../images/background-image/ТрЕЙЛЕР-МАЙНИНГ.svg);
-  top: -21%;
+  top: -24%;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -777,7 +791,7 @@ a {
   margin: 0 auto;
   font-style: italic;
   font-weight: 400;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .investors-advantages-box {
@@ -846,7 +860,7 @@ a {
 
 .investors-box--links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 20px;
   align-items: center;
 }
@@ -905,7 +919,7 @@ a {
 }
 .form--bgi {
   background-image: url(../images/background-image/контакты.svg);
-  top: 0;
+  top: -11%;
   background-repeat: no-repeat;
   background-size: contain;
   margin: 0 auto;
@@ -1114,7 +1128,7 @@ a {
   margin-bottom: 1.9vw;
 }
 .newsletter-input--box {
-  padding-bottom: 25px;
+  padding-bottom: 40px;
 }
 .newsletter-input--box input {
   background-color: transparent;
@@ -1300,25 +1314,14 @@ a {
   position: fixed;
   right: 50px;
   bottom: 30px;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 600;
+  align-items: center;
   padding: 5px 10px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: var(--accent-dark-1e);
-  background-color: var(--accent-light);
-  border: none;
-  border-radius: 5px;
-  transition: 0.4s ease;
+  cursor: pointer;
 }
-
-.button-up:hover {
-  background-color: transparent;
-  border: 1px solid var(--accent-light);
-  color: var(--accent-title-light);
+.button-up img {
+  width: 32px;
+  height: 38px;
 }
-
 .button-up.hidden {
   opacity: 0;
 }
@@ -1377,12 +1380,6 @@ a {
   .btn-primary {
     padding: 15px 60px;
   }
-  .rate-box {
-    grid-template-columns: 320px 380px;
-  }
-  .rate-btn--calc {
-    margin-left: 22.5vw;
-  }
   .mining-trailer-box {
     grid-template-rows: 180px;
   }
@@ -1405,9 +1402,7 @@ a {
     left: 23.32vw;
     right: unset;
   }
-  .rate-box {
-    grid-template-columns: 34.04vw 46.04vw;
-  }
+
   .placement-equipment--box--link {
     bottom: -10px;
   }
@@ -1471,9 +1466,6 @@ a {
   .btn-primary {
     padding: 10px 20px;
   }
-  .rate-box {
-    grid-template-columns: repeat(2, 40vw);
-  }
   .rate-box > .rate-box--item:nth-child(4) {
     grid-area: d;
     text-align: right;
@@ -1488,10 +1480,6 @@ a {
     grid-area: f;
     text-align: right;
     padding-right: 6vw;
-  }
-  .rate-btn--calc {
-    margin: 0 auto;
-    font-size: 13px;
   }
   .mining-trailer-box {
     grid-template-columns: 1fr;

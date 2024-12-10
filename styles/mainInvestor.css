@@ -141,6 +141,10 @@
   margin-top: 120px;
   position: relative;
 }
+.FAQ--wrapper {
+  position: relative;
+  z-index: 1;
+}
 .advantages--bgi.section-bg-img.faq-bg-image {
   display: block;
   background-image: url(/images/investor/background-image/FAQ.svg);

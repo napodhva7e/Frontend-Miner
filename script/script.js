@@ -49,10 +49,13 @@ function clickHandler(e) {
 
 // Menu button
 
-function menuPopUp() {
+function menuOpen() {
   document.getElementById("drop-menu").classList.toggle("show");
 }
 
+function menuClose() {
+  document.getElementById("drop-menu").classList.remove("show");
+}
 // language button
 
 function languagePopUp() {
