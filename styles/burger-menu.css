@@ -18,7 +18,9 @@
   color: #ffcd00;
   font-size: 26px;
   background-color: transparent;
-  margin-top: 30px;
+  position: absolute;
+  top: 50px;
+  left: 12px;
 }
 
 .drop-menu {
