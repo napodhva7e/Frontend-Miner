@@ -10,11 +10,6 @@
   margin-right: 10px;
 }
 
-.dropbtn:hover,
-.dropbtn:focus {
-  background-image: url(../images/language-icons/Глобус-blur.svg);
-}
-
 .dropdown {
   position: relative;
   display: inline-block;
