@@ -634,7 +634,7 @@ a {
   position: absolute;
   right: -10px;
   bottom: -20px;
-  font-size: clamp(12px, 1.5vw, 15px);
+  font-size: clamp(10px, 1.5vw, 15px);
   font-weight: 600;
   padding: 0.7vw 2.07vw;
   background-color: var(--accent-light);
@@ -1577,6 +1577,9 @@ a {
   }
   .breadcrumbs--link-box a {
     padding: 10px 0;
+  }
+  .breadcrumbs--link-box button {
+    max-width: 240px;
   }
 }
 
