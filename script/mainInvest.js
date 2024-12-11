@@ -1,6 +1,6 @@
 // value counter
 
-const valueController = ({ value, interval = 3000 }) => {
+const valueController = ({ value, interval = 2000 }) => {
   let valueDisplay = document.querySelector(value);
   let startValue = 0;
   let endValue = parseInt(valueDisplay.getAttribute("data-val"));
@@ -23,10 +23,11 @@ const startValueController = () => {
 
 // line bar progress
 
-const lineBarProgress = ({ name, interval = 3000 }) => {
+const lineBarProgress = ({ name, box, interval = 2000 }) => {
   let lineBar = document.querySelector(name);
+  let verticalBar = document.getElementById(box).clientWidth;
   let startWidth = 0;
-  let endWidth = parseInt(lineBar.getAttribute("data-val"));
+  let endWidth = Math.floor(verticalBar / 5);
 
   let duration = Math.floor(interval / endWidth);
   let counter = setInterval(function () {
@@ -41,6 +42,7 @@ const lineBarProgress = ({ name, interval = 3000 }) => {
 const startLineBarProgress = () => {
   lineBarProgress({
     name: ".line-bar",
+    box: "verticalBar",
   });
 };
 // observe
