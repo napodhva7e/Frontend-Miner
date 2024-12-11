@@ -154,3 +154,7 @@ modalController({
   btnOpen: ".section__button",
   btnClose: ".modal__close",
 });
+
+
+//value Counter
+

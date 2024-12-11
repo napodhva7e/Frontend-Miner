@@ -1339,15 +1339,19 @@ a {
 
 .button-up {
   position: fixed;
+  display: flex;
   right: 50px;
   bottom: 30px;
   align-items: center;
-  padding: 5px 10px;
+  justify-content: center;
+  padding: 5px 8px;
   cursor: pointer;
+  background-color: var(--accent-light);
+  border-radius: 50%;
 }
 .button-up img {
-  width: 32px;
-  height: 38px;
+  width: 21px;
+  height: 27px;
 }
 .button-up.hidden {
   opacity: 0;
