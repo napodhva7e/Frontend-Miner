@@ -52,7 +52,7 @@
 }
 .modal__line {
   display: block;
-  background-image: url(/images/investor/background-image/footer-line.svg);
+  background-image: url(/images/background-image/footer-line.svg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;

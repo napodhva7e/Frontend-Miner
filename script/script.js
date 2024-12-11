@@ -155,6 +155,5 @@ modalController({
   btnClose: ".modal__close",
 });
 
-
 //value Counter
 

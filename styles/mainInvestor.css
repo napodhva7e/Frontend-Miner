@@ -360,6 +360,13 @@ details[open] > summary::after {
   margin-bottom: 15px;
   margin-top: 5px;
 }
+.collect-investment-wrapper h1 {
+  font-size: clamp(50px, 6vw, 80px);
+  color: var(--accent-light);
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
 .vertival-bar {
   border: 1px solid #373737;
   width: 100%;
@@ -372,7 +379,7 @@ details[open] > summary::after {
 .line-bar {
   border-radius: 10px;
   height: 100%;
-  width: 25%;
+  width: 0;
   background: linear-gradient(
     90deg,
     rgba(255, 205, 0, 0.1) 0%,
