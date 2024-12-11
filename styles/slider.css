@@ -55,10 +55,11 @@
 }
 .swiper-navBtn {
   position: absolute;
-  width: 4%;
+  width: 45px;
   height: 40px;
   top: 40%;
   cursor: pointer;
+  z-index: 1;
 }
 
 .swip-button-next {
@@ -77,8 +78,5 @@
 @media screen and (max-width: 768px) {
   .slide-content {
     margin: 0 10px;
-  }
-  .swiper-navBtn {
-    display: none;
   }
 }
