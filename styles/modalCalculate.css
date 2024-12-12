@@ -1,0 +1,87 @@
+.modalCalc {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  cursor: pointer;
+  padding: 30px;
+  overflow-y: auto;
+  display: none;
+  z-index: 3;
+}
+
+.modal__main {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  background-color: #1e1e1e;
+  margin: auto;
+  color: #eaecef;
+  padding: 30px;
+  margin-top: 100px;
+  cursor: default;
+}
+.modal__main h1 {
+  margin: 20px 0;
+  font-size: clamp(24px, 4vw, 60px);
+  color: var(--accent-title-light);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.modal__main h1 > span {
+  color: var(--accent-light);
+  font-weight: 600;
+}
+
+.modal__title {
+  margin-bottom: 30px;
+}
+
+.miner-system-box {
+  display: flex;
+  position: relative;
+}
+.ms-box-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 440px;
+}
+.ms-box-row-country {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-around;
+  width: 100%;
+
+  /* gap: 0px; */
+}
+.ms-box-row-country p {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.ms-box-getCalculet {
+  display: grid;
+  grid-template-columns: repeat(2, 180px);
+  grid-template-rows: repeat(2, 100px);
+  gap: 30px;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+}
+
+.item-getCalculet {
+  border-radius: 20px;
+  background-color: #1c1c1c;
+  text-align: center;
+  border: 1px solid #ffcd00;
+}
+.item-getCalculet > .title {
+  margin-bottom: 0;
+}
+.item-getCalculet > p:last-child {
+  font-weight: 500;
+  font-size: 24px;
+}

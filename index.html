@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/burger-menu.css">
     <link rel="stylesheet" href="styles/popUp.css">
     <link rel="stylesheet" href="styles/slider.css">
+    <link rel="stylesheet" href="styles/modalCalculate.css">
     
       <!-- <title>Responsive Card Slider</title> -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
@@ -356,10 +357,61 @@
               <p></p>
             </div>
           </div>
-          <button class="btn-primary rate-btn--calc">расчитать стоимость</button>
+          <button class="btn-primary rate-btn--calc modalOpen__button">расчитать стоимость</button>
         </div>
       </div>
     </section>
+
+    <div class="modalCalc">
+      <div class="modal__main">
+        <div class="modal__line line-up"></div>
+        <h1>бла бла, ваша прибыль может составить:</h1>
+        <div class="miner-system-items">
+          <div class="miner-system-box">
+            <div class="ms-box-item">
+              <h3 class="ms-box-name">Antminer S19 Pro</h3>
+              <h3 class="ms-box-name">Whatsminer M30S</h3>
+              <h3 class="ms-box-name">Elphapex DG 1+ 14.4G </h3>
+              <h3 class="ms-box-name">Elphapex DG 1+ 13.6G </h3>
+              <h3 class="ms-box-name">Elphapex DG 1 11G</h3>
+              <h3 class="ms-box-name">Antminer L7</h3>
+              <h3 class="ms-box-name">Bitmain Antminer L9 Версии 16GHs / 17 GHs</h3>
+            </div>
+            <div class="ms-box-row-country">
+              <p>Болгария</p>
+              <p>Эстония</p>
+              <p>Латвия</p>
+            </div>
+            <div class="ms-box-getCalculet">
+              <div class="item-getCalculet">
+                <p class="title">Доход</p>
+                <p class="Income">0</p>
+              </div>
+              <div class="item-getCalculet">
+                <p class="title">Чистая прибыль</p>
+                <p class="Profit">0</p>
+              </div>
+              <div class="item-getCalculet">
+                <p class="title">РОИ</p>
+                <p class="ROI">0</p>
+              </div>
+              <div class="item-getCalculet ">
+                <p class="title">Электричество</p>
+                <p class="Electricity">0</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+
+
+
+        <div class="modal__line line-down"></div>
+        <button class="modal__close">&#128936</button>
+      </div>
+    </div>
+
 
     <section class="placement-equipment scroll-margin" id="placement-equipment">
       <div class="placement-equipment--bgi section-bg-img"></div>
@@ -657,6 +709,7 @@
     <!--Uncomment this line-->
     <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js" defer></script>
     <script src="script/slider.js" defer></script>
+    <script src="script/modalCalculate.js" defer></script>
 
     <script src="script/script.js" defer></script>
   </body>
