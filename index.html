@@ -369,18 +369,32 @@
         <div class="miner-system-items">
           <div class="miner-system-box">
             <div class="ms-box-item">
-              <h3 class="ms-box-name">Antminer S19 Pro</h3>
-              <h3 class="ms-box-name">Whatsminer M30S</h3>
-              <h3 class="ms-box-name">Elphapex DG 1+ 14.4G </h3>
-              <h3 class="ms-box-name">Elphapex DG 1+ 13.6G </h3>
-              <h3 class="ms-box-name">Elphapex DG 1 11G</h3>
-              <h3 class="ms-box-name">Antminer L7</h3>
-              <h3 class="ms-box-name">Bitmain Antminer L9 Версии 16GHs / 17 GHs</h3>
+              <h3>Выберите майнинг систему:</h3>
+              <input type="radio" name="model" class="ms-box-input input-system" id="AntminerS19Pro">
+              <label class="ms-box-name" for="AntminerS19Pro">Antminer S19 Pro</label>
+              <input type="radio" name="model" class="ms-box-input input-system" id="WhatsminerM30S">
+              <label class="ms-box-name" for="WhatsminerM30S">Whatsminer M30S</label>
+              <input type="radio" name="model" class="ms-box-input input-system" id="ElphapexDG1144G">
+              <label class="ms-box-name" for="ElphapexDG1144G">Elphapex DG 1+ 14.4G</label>
+              <input type="radio" name="model" class="ms-box-input input-system" id="ElphapexDG1136G">
+              <label class="ms-box-name" for="ElphapexDG1136G">ElphapexDG1+13.6G</label>
+              <input type="radio" name="model" class="ms-box-input input-system" id="ElphapexDG111G">
+              <label class="ms-box-name" for="ElphapexDG111G">Elphapex DG 1 11G</label>
+              <input type="radio" name="model" class="ms-box-input input-system" id="AntminerL7">
+              <label class="ms-box-name" for="AntminerL7">Antminer L7</label>
+              <input type="radio" name="model" class="ms-box-input input-system" id="BitmainAntminerL9">
+              <label class="ms-box-name" for="BitmainAntminerL9">Bitmain Antminer L9 Версии 16GHs / 17 GHs</label>
             </div>
-            <div class="ms-box-row-country">
-              <p>Болгария</p>
-              <p>Эстония</p>
-              <p>Латвия</p>
+            <div class="ms-box-row">
+              <p>Выберите страну:</p>
+              <div class="ms-box-row-country">
+                <input type="radio" name="model-cunt" class="ms-box-input input-country" id="Bulgaria">
+                <label class="ms-box-name" for="Bulgaria">Болгария</label>
+                <input type="radio" name="model-cunt" class="ms-box-input input-country" id="Estonia">
+                <label class="ms-box-name" for="Estonia">Эстония</label>
+                <input type="radio" name="model-cunt" class="ms-box-input input-country" id="Latvia">
+                <label class="ms-box-name" for="Latvia">Латвия</label>
+              </div>
             </div>
             <div class="ms-box-getCalculet">
               <div class="item-getCalculet">
@@ -400,7 +414,7 @@
                 <p class="Electricity">0</p>
               </div>
             </div>
-            
+            <button onclick="" class="ms-box-btn">Расчитать</button>
           </div>
         </div>
 

@@ -41,12 +41,66 @@
 .miner-system-box {
   display: flex;
   position: relative;
+  margin-bottom: 30px;
 }
 .ms-box-item {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 440px;
+  max-width: 500px;
+  font-weight: 300;
+  gap: 40px;
+}
+.ms-box-item h3:first-child {
+  font-size: clamp(12px, 2vw, 24px);
+  font-weight: 500;
+  margin: 0;
+}
+.ms-box-name {
+  font-weight: 500;
+  font-size: clamp(10px, 2vw, 20px);
+  display: flex;
+  gap: 10px;
+  padding: 5px 10px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.ms-box-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.ms-box-input + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.ms-box-input + label::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ffcd00;
+  position: relative;
+}
+.ms-box-input:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #ffcd00;
+  margin: 5px;
+}
+.ms-box-name:hover {
+  color: #ffcd00;
+}
+.ms-box-row {
+  width: 100%;
+  text-align: center;
+}
+.ms-box-row p {
+  font-size: clamp(12px, 3vw, 28px);
+  margin: 0;
 }
 .ms-box-row-country {
   display: flex;
@@ -54,14 +108,14 @@
   align-items: start;
   justify-content: space-around;
   width: 100%;
-
-  /* gap: 0px; */
+  margin-top: 35px;
 }
 .ms-box-row-country p {
-  font-size: 24px;
-  font-weight: 500;
-  margin-top: 15px;
+  font-size: clamp(10px, 2vw, 24px);
+  font-weight: 300;
+  margin-top: 25px;
 }
+
 .ms-box-getCalculet {
   display: grid;
   grid-template-columns: repeat(2, 180px);
@@ -69,7 +123,7 @@
   gap: 30px;
   position: absolute;
   left: 50%;
-  top: 30%;
+  top: 40%;
 }
 
 .item-getCalculet {
@@ -84,4 +138,23 @@
 .item-getCalculet > p:last-child {
   font-weight: 500;
   font-size: 24px;
+}
+
+.ms-box-btn {
+  position: absolute;
+  right: 29%;
+  bottom: 5%;
+  border: none;
+  background-color: #ffcd00;
+  color: #1e1e1e;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 8px 35px;
+  transition: 0.3s ease-in-out;
+}
+
+.ms-box-btn:hover {
+  background-color: transparent;
+  color: #eaecef;
+  outline: 1px solid #ffcd00;
 }

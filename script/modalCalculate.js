@@ -5,7 +5,7 @@ const scrollController2 = {
     document.body.style.cssText = `
       overflow: hidden;
       position: fixed;
-      top: -${scrollController.scrollTPosition}px;
+      top: -${scrollController2.scrollTPosition}px;
       left: 0;
       height: 100vh;
       width: 100vw;
@@ -14,7 +14,7 @@ const scrollController2 = {
   },
   enabledScroll() {
     document.body.style.cssText = ``;
-    window.scroll({ top: scrollController.scrollTPosition });
+    window.scroll({ top: scrollController2.scrollTPosition });
   },
 };
 
@@ -65,3 +65,174 @@ modalController2({
   btnOpen: ".modalOpen__button",
   btnClose: ".modal__close",
 });
+
+// getCalculate
+
+const DC = 2 * Math.pow(10, 15);
+const ER = 6.25;
+const PR = 100000;
+
+const minerSystemObj = {
+  AntminerS19Pro: {
+    hr: 110 * Math.pow(10, 12),
+    power: 3250,
+    cost: 2500,
+    id: "AntminerS19Pro",
+  },
+  WhatsminerM30S: {
+    hr: 100 * Math.pow(10, 12),
+    power: 3400,
+    cost: 2300,
+    id: "WhatsminerM30S",
+  },
+  ElphapexDG1144G: {
+    hr: 144 * Math.pow(10, 8),
+    power: 3920,
+    cost: 10450,
+    id: "ElphapexDG1+14.4G",
+  },
+  ElphapexDG1136G: {
+    hr: 136 * Math.pow(10, 8),
+    power: 3400,
+    cost: 9800,
+    id: "ElphapexDG113.6G",
+  },
+  ElphapexDG111G: {
+    hr: 11 * Math.pow(10, 9),
+    power: 3420,
+    cost: 6999,
+    id: "ElphapexDG111G",
+  },
+  AntminerL7: {
+    hr: 916 * Math.pow(10, 8),
+    power: 3425,
+    cost: 5700,
+    id: "AntminerL7",
+  },
+  BitmainAntminerL9: {
+    hr: 165 * Math.pow(10, 8),
+    power: 3250,
+    cost: 12800,
+    id: "BitmainAntminerL9",
+  },
+};
+
+const countryObj = {
+  Bulgaria: {
+    id: "Bulgaria",
+    CE: 0.08,
+  },
+  Estonia: {
+    id: "Estonia",
+    CE: 0.1,
+  },
+  Latvia: {
+    id: "Latvia",
+    CE: 0.1,
+  },
+};
+
+// получение id инпута системы при нажатии
+const inputSystems = document.querySelectorAll(".input-system");
+
+for (const inputSystem of inputSystems) {
+  inputSystem.addEventListener("click", giveActiveSystem);
+}
+
+function giveActiveSystem() {
+  document
+    .getElementById(this.getAttribute("id"))
+    .classList.toggle("activeSystem");
+}
+
+// получение id инпута страны при нажатии
+
+const countrys = document.querySelectorAll(".input-country");
+
+for (const country of countrys) {
+  country.addEventListener("click", giveActiveCountry);
+}
+
+function giveActiveCountry() {
+  document
+    .getElementById(this.getAttribute("id"))
+    .classList.add("activeCountry");
+}
+
+function deleteClass(system, country) {
+  for (const inputSystem of inputSystems) {
+    inputSystem.checked = false;
+  }
+  for (const country of countrys) {
+    country.checked = false;
+  }
+  system.classList.remove("activeSystem");
+  country.classList.remove("activeCountry");
+}
+function getCharacter(idS, idC) {
+  let hr = minerSystemObj[idS].hr;
+  let power = minerSystemObj[idS].power;
+  let cost = minerSystemObj[idS].cost;
+  let ce = countryObj[idC].CE;
+  getCalc(hr, power, cost, ce);
+}
+
+// функция всех рассчетов
+
+function getCalc(hr, power, cost, ce) {
+  let reven = revenue(hr);
+  let ecost = electricity(power, ce).toFixed(2);
+  let nprofit = profit(reven, ecost).toFixed(3);
+  let roi = ROI(cost, nprofit);
+  showResult(reven, ecost, nprofit, roi);
+}
+
+// функция общего дохода
+
+function revenue(hr) {
+  let reven = (((hr * ER) / DC) * PR) / 1000;
+  return reven;
+}
+
+// функция расчета оплаты электроэнергии
+
+function electricity(power, ce) {
+  let ec = power * 24 * (ce / 1000);
+  return ec;
+}
+
+// функция расчета чистого дохода
+
+function profit(reven, ecost) {
+  let nprofit = reven - ecost;
+  return nprofit;
+}
+
+// функция расчета рои
+function ROI(cost, nprofit) {
+  let roi = Math.floor(cost / nprofit);
+  return roi;
+}
+
+function showResult(reven, ecost, nprofit, ROI) {
+  const incomeItem = document.querySelector(".Income");
+  const profitItem = document.querySelector(".Profit");
+  const roiItem = document.querySelector(".ROI");
+  const electricityItem = document.querySelector(".Electricity");
+  incomeItem.innerHTML = `${reven} USD`;
+  profitItem.innerHTML = `${nprofit} USD`;
+  roiItem.innerHTML = `${ROI} дней`;
+  electricityItem.innerHTML = `${ecost} USD`;
+}
+
+function calculated() {
+  const inputSystem = document.querySelector(".activeSystem");
+  const inputCountry = document.querySelector(".activeCountry");
+  const idSystem = inputSystem.getAttribute("id");
+  const idCountry = inputCountry.getAttribute("id");
+  getCharacter(idSystem, idCountry);
+  deleteClass(inputSystem, inputCountry);
+}
+
+const msBoxBtn = document.querySelector(".ms-box-btn");
+msBoxBtn.addEventListener("click", calculated);
