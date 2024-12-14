@@ -46,19 +46,21 @@
 .ms-box-item {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 500px;
+  /* width: 100%;
+  max-width: 500px; */
+  flex-basis: 60%;
   font-weight: 300;
   gap: 40px;
 }
-.ms-box-item h3:first-child {
-  font-size: clamp(12px, 2vw, 24px);
+.ms-box-item h3 {
+  font-size: clamp(14px, 2vw, 24px);
   font-weight: 500;
   margin: 0;
+  width: 100%;
 }
 .ms-box-name {
   font-weight: 500;
-  font-size: clamp(10px, 2vw, 20px);
+  font-size: clamp(10px, 1.8vw, 20px);
   display: flex;
   gap: 10px;
   padding: 5px 10px;
@@ -78,8 +80,10 @@
 .ms-box-input + label::before {
   content: "";
   display: inline-block;
+  min-width: 16px;
   width: 16px;
   height: 16px;
+  max-height: 16px;
   border: 1px solid #ffcd00;
   position: relative;
 }
@@ -97,10 +101,12 @@
 .ms-box-row {
   width: 100%;
   text-align: center;
+  flex-basis: 80%;
 }
 .ms-box-row p {
-  font-size: clamp(12px, 3vw, 28px);
+  font-size: clamp(16px, 2vw, 28px);
   margin: 0;
+  font-weight: 500;
 }
 .ms-box-row-country {
   display: flex;
@@ -110,7 +116,7 @@
   width: 100%;
   margin-top: 35px;
 }
-.ms-box-row-country p {
+.ms-box-row-country label {
   font-size: clamp(10px, 2vw, 24px);
   font-weight: 300;
   margin-top: 25px;
@@ -118,12 +124,12 @@
 
 .ms-box-getCalculet {
   display: grid;
-  grid-template-columns: repeat(2, 180px);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 100px);
   gap: 30px;
   position: absolute;
-  left: 50%;
-  top: 40%;
+  right: 15%;
+  bottom: 15%;
 }
 
 .item-getCalculet {
@@ -131,19 +137,25 @@
   background-color: #1c1c1c;
   text-align: center;
   border: 1px solid #ffcd00;
+  min-width: 80px;
 }
 .item-getCalculet > .title {
   margin-bottom: 0;
+  font-size: clamp(10px, 1.5vw, 16px);
+  padding: 0 15px;
+  word-break: break-all;
 }
 .item-getCalculet > p:last-child {
   font-weight: 500;
-  font-size: 24px;
+  font-size: clamp(16px, 2vw, 24px);
+  margin: 0;
+  margin-top: 15px;
 }
 
 .ms-box-btn {
   position: absolute;
   right: 29%;
-  bottom: 5%;
+  bottom: 3%;
   border: none;
   background-color: #ffcd00;
   color: #1e1e1e;
@@ -157,4 +169,76 @@
   background-color: transparent;
   color: #eaecef;
   outline: 1px solid #ffcd00;
+}
+
+@media (max-width: 1024px) {
+  .ms-box-btn {
+    right: 20%;
+  }
+  .ms-box-getCalculet {
+    right: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .ms-box-btn {
+    right: 19%;
+  }
+  .ms-box-getCalculet {
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 80px);
+    gap: 15px;
+    right: 10%;
+  }
+  .modal__main.modal_calc {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .ms-box-getCalculet {
+    grid-template-columns: repeat(2, 85px);
+    grid-template-rows: repeat(2, 75px);
+    gap: 15px;
+    bottom: 10%;
+  }
+  .ms-box-btn {
+    right: 14%;
+  }
+  .miner-system-box {
+    display: flex;
+    position: relative;
+    margin-bottom: 30px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .ms-box-item {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, 60px);
+    gap: 0;
+    word-break: break-all;
+  }
+  .ms-box-row-country {
+    margin-top: 15px;
+    padding-bottom: 270px;
+    flex-wrap: wrap;
+  }
+  .ms-box-row-country label {
+    margin-top: 0;
+    font-size: clamp(10px, 2vw, 24px);
+  }
+  .ms-box-getCalculet {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 15%;
+    width: 190px;
+  }
+  .ms-box-btn {
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    max-width: 180px;
+  }
 }

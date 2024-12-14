@@ -68,49 +68,49 @@ modalController2({
 
 // getCalculate
 
-const DC = 2 * Math.pow(10, 15);
-const ER = 6.25;
-const PR = 100000;
+const DC = 3 * Math.pow(10, 7);
+const ER = 12.5;
+const PR = 70;
 
 const minerSystemObj = {
   AntminerS19Pro: {
-    hr: 110 * Math.pow(10, 12),
+    hr: 11 * Math.pow(10, 5),
     power: 3250,
     cost: 2500,
     id: "AntminerS19Pro",
   },
   WhatsminerM30S: {
-    hr: 100 * Math.pow(10, 12),
+    hr: 10 * Math.pow(10, 5),
     power: 3400,
     cost: 2300,
     id: "WhatsminerM30S",
   },
   ElphapexDG1144G: {
-    hr: 144 * Math.pow(10, 8),
+    hr: 144 * Math.pow(10, 4),
     power: 3920,
-    cost: 10450,
+    cost: 8450,
     id: "ElphapexDG1+14.4G",
   },
   ElphapexDG1136G: {
-    hr: 136 * Math.pow(10, 8),
+    hr: 136 * Math.pow(10, 4),
     power: 3400,
-    cost: 9800,
+    cost: 8800,
     id: "ElphapexDG113.6G",
   },
   ElphapexDG111G: {
-    hr: 11 * Math.pow(10, 9),
+    hr: 11 * Math.pow(10, 5),
     power: 3420,
     cost: 6999,
     id: "ElphapexDG111G",
   },
   AntminerL7: {
-    hr: 916 * Math.pow(10, 8),
+    hr: 91.6 * Math.pow(10, 4),
     power: 3425,
     cost: 5700,
     id: "AntminerL7",
   },
   BitmainAntminerL9: {
-    hr: 165 * Math.pow(10, 8),
+    hr: 165 * Math.pow(10, 4),
     power: 3250,
     cost: 12800,
     id: "BitmainAntminerL9",
@@ -190,7 +190,7 @@ function getCalc(hr, power, cost, ce) {
 // функция общего дохода
 
 function revenue(hr) {
-  let reven = (((hr * ER) / DC) * PR) / 1000;
+  let reven = (((hr * ER) / DC) * PR).toFixed(2);
   return reven;
 }
 
