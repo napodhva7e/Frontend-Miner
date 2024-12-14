@@ -182,14 +182,11 @@ summary {
   display: flex;
   gap: 12px;
 }
-summary::after {
+summary img {
   content: "";
   display: block;
-  background-image: url(/images/investor/icons/faq-triangle.svg);
   width: 25px;
   height: 20px;
-  background-repeat: no-repeat;
-  background-size: contain;
   margin-top: 4px;
   transform: rotate(-90deg);
   transition: 0.3s ease;
@@ -200,14 +197,7 @@ summary::-weblit-details-marker {
 details[open] {
   background-color: transparent;
 }
-details[open] > summary::after {
-  /* content: "";
-  display: block;
-  background-image: url(/images/investor/icons/faq-triangle.svg);
-  width: 25px;
-  height: 20px;
-  background-repeat: no-repeat;
-  background-size: contain; */
+details[open] > summary img {
   margin-top: 7px;
   transform: rotate(0deg);
 }
