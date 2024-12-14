@@ -119,7 +119,6 @@
 .ms-box-row-country label {
   font-size: clamp(10px, 2vw, 24px);
   font-weight: 300;
-  margin-top: 25px;
 }
 
 .ms-box-getCalculet {
@@ -155,7 +154,7 @@
 
 .ms-box-btn {
   position: absolute;
-  right: 29%;
+  right: 23%;
   bottom: 3%;
   border: none;
   background-color: #ffcd00;
@@ -183,7 +182,7 @@
 
 @media (max-width: 768px) {
   .ms-box-btn {
-    right: 19%;
+    right: 13%;
   }
   .ms-box-getCalculet {
     grid-template-columns: repeat(2, 100px);
