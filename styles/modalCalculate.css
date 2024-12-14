@@ -144,10 +144,11 @@
   font-size: clamp(10px, 1.5vw, 16px);
   padding: 0 15px;
   word-break: break-all;
+  height: 20px;
 }
 .item-getCalculet > p:last-child {
   font-weight: 500;
-  font-size: clamp(16px, 2vw, 24px);
+  font-size: clamp(10px, 2vw, 24px);
   margin: 0;
   margin-top: 15px;
 }
@@ -197,10 +198,14 @@
 
 @media (max-width: 500px) {
   .ms-box-getCalculet {
-    grid-template-columns: repeat(2, 85px);
+    grid-template-columns: repeat(2, 100px);
     grid-template-rows: repeat(2, 75px);
     gap: 15px;
-    bottom: 10%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 15%;
+    width: 216px;
   }
   .ms-box-btn {
     right: 14%;
@@ -228,17 +233,13 @@
     margin-top: 0;
     font-size: clamp(10px, 2vw, 24px);
   }
-  .ms-box-getCalculet {
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    bottom: 15%;
-    width: 190px;
-  }
   .ms-box-btn {
     right: 0;
     left: 0;
     margin: 0 auto;
     max-width: 180px;
+  }
+  .modalCalc {
+    padding: 15px;
   }
 }
