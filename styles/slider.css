@@ -56,23 +56,20 @@
 .swiper-navBtn {
   position: absolute;
   width: 45px;
-  height: 40px;
+  height: 45px;
   top: 40%;
   cursor: pointer;
   z-index: 1;
 }
-
+.swiper-navBtn img {
+  width: 45px;
+  height: 45px;
+}
 .swip-button-next {
   right: 0;
-  background-image: url(/images/icons/next-arrow.png);
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 .swip-button-prev {
   left: 0;
-  background-image: url(/images/icons/prev-arrow.png);
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 @media screen and (max-width: 768px) {

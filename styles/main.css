@@ -1169,17 +1169,19 @@ a {
 }
 .footer-line-bgi {
   display: block;
-  background-image: url(/images/background-image/footer-line.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
   width: 100%;
   max-width: 1850px;
   height: 2px;
   left: 0;
   right: 0;
-  top: 0;
+  top: -30px;
   margin: 0 auto;
   position: absolute;
+}
+.footer-line-bgi img {
+  width: 100%;
+  max-width: 1850px;
+  height: 2px;
 }
 .footer--wrapper {
   display: flex;
