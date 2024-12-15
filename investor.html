@@ -14,12 +14,13 @@
     <link rel="stylesheet" href="styles/language-button.css" />
     <link rel="stylesheet" href="styles/burger-menu.css" />
     <link rel="stylesheet" href="styles/mainInvestor.css">
+    <link rel="stylesheet" href="styles/animate.css">
 
     <title>investors</title>
   </head>
   <body>
 
-    <header class="header">
+    <header class="header animate__animated animate__fadeInDown">
         <div class="drop-menu">
           <div id="drop-menu" class="dropdown-content-menu">
             <button class="menu__close__btn" onclick="menuClose()">&#10006</button>
@@ -76,7 +77,7 @@
         <div class="top-line" id="TopLineId"></div>
     </section>
 
-    <section class="hero" id="heroId">
+    <section class="hero animate__animated animate__backInLeft" id="heroId">
         <div class="hero--bgi section-bg-img"></div>
       <div class="container">
         <div class="breadcrumbs">
@@ -95,7 +96,7 @@
       </div>
     </section>
 
-    <section class="advantages">
+    <section class="advantages wow animate__animated animate__pulse">
         <div class="advantages--bgi section-bg-img invest-bg-image"></div>
           <div class="container">
             <div class="advantages--wrapper">
@@ -136,7 +137,7 @@
         </div>
     </section>
 
-    <section class="faq">
+    <section class="faq wow animate__animated animate__fadeInUp">
       <div class="advantages--bgi section-bg-img faq-bg-image"></div>
       <div class="container">
         <div class="FAQ--wrapper">
@@ -173,7 +174,7 @@
     </section>
 
 
-    <section class="investors advantage-work">
+    <section class="investors advantage-work wow animate__animated animate__zoomIn">
       <div class="investors--bgi section-bg-img invest-advantage-bgi"></div>
       <div class="container">
         <div class="investors--wrapper">
@@ -215,7 +216,7 @@
       </div>
     </section>
 
-    <section class="placement-equipment" id="placement-equipment">
+    <section class="placement-equipment wow animate__animated animate__fadeIn" id="placement-equipment">
       <div class="container">
         <div class="placement-equipment--wrapper">
           <div class="main-info--box">
@@ -242,7 +243,7 @@
       </div>
     </section>
 
-    <section class="collect-investment">
+    <section class="collect-investment wow animate__animated animate__zoomIn">
       <div class="container">
         <div class="collect-investment-wrapper">
           <h1 class="collect-investment-title">Собрано инвестиций</h1>
@@ -264,7 +265,7 @@
       </div>
     </section>
 
-    <section class="form" id="form">
+    <section class="form wow animate__animated animate__fadeIn" id="form">
       <div class="advantages--bgi form--bgi section-bg-img"></div>
       <div class="container">
         <div class="form--wrapper">
@@ -312,7 +313,7 @@
     </section>
 
 
-    <footer class="footer">
+    <footer class="footer wow animate__animated animate__fadeInUp">
       <div class="footer-line-bgi"><img src="images/background-image/footer-line.svg" alt=""></div>
       <div class="container">
         <div class="footer--wrapper">
@@ -358,8 +359,12 @@
       </div>
     </footer>
     <a href="#TopLineId" class="button-up hidden" id="btnUp"><img src="images/icons/Arrow-Up-Icon-Outline.png" alt=""></a>
+    <script src="script/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 
-    <script src="script/script.js"></script>
-    <script src="script/mainInvest.js"></script>
+    <script src="script/script.js" defer></script>
+    <script src="script/mainInvest.js" defer></script>
   </body>
 </html>
