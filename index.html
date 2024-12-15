@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="styles/popUp.css">
     <link rel="stylesheet" href="styles/slider.css">
     <link rel="stylesheet" href="styles/modalCalculate.css">
+    <!-- <link rel="stylesheet" href="styles/animation.css"> -->
+     <link rel="stylesheet" href="node_modules/animate.css/animate.css">
+
     
       <!-- <title>Responsive Card Slider</title> -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
@@ -32,7 +35,7 @@
     <title>Miner</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header animate__animated animate__fadeInDown">
       <div class="drop-menu">
         <div id="drop-menu" class="dropdown-content-menu">
           <button class="menu__close__btn" onclick="menuClose()">&#10006</button>
@@ -87,7 +90,7 @@
       <div class="top-line" id="TopLineId"></div>
     </section>
 
-    <section class="hero" id="heroId">
+    <section class="hero animate__animated animate__backInLeft" id="heroId">
       <div class="container">
         <div class="breadcrumbs">
           <h1>
@@ -106,7 +109,7 @@
       </div>
     </section>
 
-    <section class="advantages">
+    <section class="advantages animate__animated animate__pulse animate animate__delay-1s">
       <div class="advantages--bgi section-bg-img"></div>
       <div class="container">
         <div class="advantages--wrapper">
@@ -148,7 +151,7 @@
       </div>
     </section>
    
-    <section class="main scroll-margin" id="main">
+    <section class="main scroll-margin wow animate__animated animate__fadeInUp" id="main">
       <div class="main--bgi section-bg-img"></div>
       <div class="container">
         <div class="main--wrapper">
@@ -299,7 +302,7 @@
     </section>
 
 
-    <section class="relevant-system">
+    <section class="relevant-system wow animate__animated animate__zoomIn">
       <div class="relevant-box--title">
         <h1>Актуальные и безопасные модели для добычи</h1>
       </div>
@@ -317,7 +320,7 @@
       </div>
     </section>
 
-    <section class="rate scroll-margin" id="rate">
+    <section class="rate scroll-margin wow animate__animated animate__slideInRight" id="rate">
       <div class="rate--bgi section-bg-img"></div>
       <div class="container">
         <div class="rate--wrapper">
@@ -418,16 +421,13 @@
           </div>
         </div>
 
-
-
-
         <div class="modal__line line-down"></div>
         <button class="modal__close">&#128936</button>
       </div>
     </div>
 
 
-    <section class="placement-equipment scroll-margin" id="placement-equipment">
+    <section class="placement-equipment scroll-margin wow animate__animated animate__fadeIn" id="placement-equipment">
       <div class="placement-equipment--bgi section-bg-img"></div>
       <div class="container">
         <div class="placement-equipment--wrapper">
@@ -441,7 +441,7 @@
               и максимальной поддержкой
             </p>
           </div>
-          <div class="placement-equipment--box">
+          <div class="placement-equipment--box wow">
             <div class="placement-equipment--box--item">
               <h3>Размещение в Болгарии</h3>
               <p class="placement-equipment-price1">Цена на электричество: 0.08 €/кВт*ч</p>
@@ -461,7 +461,7 @@
       </div>
     </section>
     
-    <section class="mining-trailer">
+    <section class="mining-trailer wow animate__animated animate__fadeIn">
       <div class="mining-trailer--bgi section-bg-img"></div>
       <div class="container">
         <div class="mining-trailer--wrapper">
@@ -504,7 +504,7 @@
       </div>
     </section>
 
-    <section class="investors scroll-margin" id="investors">
+    <section class="investors scroll-margin wow animate__animated animate__zoomIn" id="investors">
       <div class="investors--bgi section-bg-img"></div>
       <div class="container">
         <div class="investors--wrapper">
@@ -591,7 +591,7 @@
     </div>
 
 
-    <section class="form scroll-margin" id="form">
+    <section class="form scroll-margin wow animate__animated animate__fadeIn" id="form">
       <div class="advantages--bgi form--bgi section-bg-img"></div>
       <div class="container">
         <div class="form--wrapper">
@@ -638,7 +638,7 @@
       </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts wow animate__animated animate__fadeIn">
       <div class="container">
         <div class="contacts--wrapper">
           <h2>контактные данные</h2>
@@ -661,7 +661,7 @@
       </div>
     </section>
 
-    <section class="newsletter">
+    <section class="newsletter wow animate__animated animate__fadeIn">
       <div class="container">
         <div class="newsletter--wrapper">
           <h2>Новостная рассылка</h2>
@@ -674,7 +674,7 @@
       </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer wow animate__animated animate__fadeInUp">
       <div class="footer-line-bgi"><img src="images/background-image/footer-line.svg" alt=""></div>
       <div class="container">
         <div class="footer--wrapper">
@@ -724,6 +724,10 @@
     <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js" defer></script>
     <script src="script/slider.js" defer></script>
     <script src="script/modalCalculate.js" defer></script>
+    <script src="script/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 
     <script src="script/script.js" defer></script>
   </body>

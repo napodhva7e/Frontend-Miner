@@ -16,6 +16,7 @@ body {
   background-color: var(--accent-dark-1e);
   color: var(--accent-dark);
   cursor: default;
+  overflow-x: hidden;
 }
 
 a {
