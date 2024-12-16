@@ -49,6 +49,7 @@
   display: block;
   font-size: clamp(36px, 5vw, 55px);
   outline: none;
+  border: none;
 }
 .modal__line {
   display: block;
@@ -71,6 +72,9 @@
 }
 .modal__line.line-up {
   top: 10px;
+}
+.modal__line img {
+  width: 100%;
 }
 .modal__line.line__down {
   bottom: 10px;

@@ -275,27 +275,7 @@ details[open] > summary img {
 .advantages-work--item > .investors-box-icon > .investors-icon {
   height: 110px;
   width: 100%;
-  /* background-repeat: no-repeat;
-  background-size: contain; */
 }
-/* .advantages-work-wrapper
-  > .advantages-work--item:nth-child(1)
-  > .investors-box-icon
-  > .investors-icon {
-  background-image: url(/images/investor/icons/Безопасность@4x.svg);
-}
-.advantages-work-wrapper
-  > .advantages-work--item:nth-child(2)
-  > .investors-box-icon
-  > .investors-icon {
-  background-image: url(/images/investor/icons/Рентабельность@4x.svg);
-}
-.advantages-work-wrapper
-  > .advantages-work--item:nth-child(3)
-  > .investors-box-icon
-  > .investors-icon {
-  background-image: url(/images/investor/icons/Индивидуальный\ подход@4x.svg);
-} */
 
 /* Invest Type */
 
