@@ -388,7 +388,7 @@ a {
 .btn-primary {
   color: var(--accent-title-light);
   font-size: clamp(12px, 1.5vw, 16px);
-  font-weight: 600;
+  font-weight: 500;
   margin-top: 15px;
   padding: 18px 79px;
   background-color: var(--item-order-btn);
