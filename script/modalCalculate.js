@@ -63,7 +63,7 @@ const modalController2 = ({ modal, btnOpen, btnClose, time = 300 }) => {
 modalController2({
   modal: ".modalCalc",
   btnOpen: ".modalOpen__button",
-  btnClose: ".modal__close",
+  btnClose: ".modal__close_calc",
 });
 
 // getCalculate
