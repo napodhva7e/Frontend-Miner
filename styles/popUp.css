@@ -44,10 +44,9 @@
   cursor: pointer;
   color: #ffcd00;
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 25px;
+  right: 20px;
   display: block;
-  font-size: clamp(36px, 5vw, 55px);
   outline: none;
 }
 .modal__line {
@@ -105,5 +104,9 @@
 @media (max-width: 500px) {
   .modal__main {
     padding: 30px 10px;
+  }
+  .modal__close img {
+    width: 20px;
+    height: 20px;
   }
 }
