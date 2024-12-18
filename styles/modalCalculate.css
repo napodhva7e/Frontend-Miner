@@ -170,7 +170,20 @@
   color: #eaecef;
   outline: 1px solid #ffcd00;
 }
-
+.modal__close_calc {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  display: block;
+  outline: none;
+}
+.modal__close_calc img {
+  width: 30px;
+  height: 30px;
+}
 @media (max-width: 1024px) {
   .ms-box-btn {
     right: 20%;
