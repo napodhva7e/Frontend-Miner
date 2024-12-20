@@ -334,6 +334,8 @@ a {
   letter-spacing: 0.8px;
   line-height: 150%;
   margin-top: 15px;
+  width: 100%;
+  max-width: 1000px;
 }
 .main-box {
   margin-top: 25px;
