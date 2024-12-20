@@ -69,15 +69,21 @@
   margin: 0 auto;
 }
 .modal__line.line-up {
-  top: -12px;
+  top: 0;
+}
+.modal-line-up-img {
+  margin-bottom: 11px;
 }
 .modal__line img {
   width: 100%;
+  height: 2px;
 }
 .modal__line.line-down {
-  bottom: 13px;
+  bottom: 0;
 }
-
+.modal-line-down-img {
+  margin-bottom: 12px;
+}
 .form-container.modal__container {
   border: none;
 }
