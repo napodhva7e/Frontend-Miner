@@ -292,7 +292,7 @@ a {
 .advantages-box--item p {
   font-size: clamp(10px, 2vw, 20px);
   font-weight: 400;
-  color: var(--accent-text-light);
+  color: var(--accent-title-light);
   margin: 0 0.8vw;
   line-height: 160%;
 }
@@ -329,7 +329,7 @@ a {
 .p-info {
   font-size: clamp(10px, 2vw, 24px);
   font-weight: 300;
-  color: var(--accent-text-light);
+  color: var(--accent-title-light);
   margin: 0;
   letter-spacing: 0.8px;
   line-height: 150%;

@@ -106,7 +106,7 @@
   margin: 0;
   font-size: clamp(10px, 2vw, 16px);
   font-weight: 300;
-  color: var(--accent-text-light);
+  color: var(--accent-title-light);
   margin-bottom: 30px;
   margin-left: 50px;
   padding-right: 30px;
@@ -251,7 +251,7 @@ details[open] > summary img {
 }
 .advantages-work--item {
   font-size: clamp(10px, 1.5vw, 14px);
-  color: var(--accent-text-light);
+  color: var(--accent-title-light);
   font-weight: 300;
   text-align: left;
   padding: 0 20px 0 30px;
