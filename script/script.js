@@ -57,6 +57,7 @@ function toggleFaidOutLeft() {
 function toggleShow() {
   document.getElementById("drop-menu").classList.toggle("show");
 }
+
 function menuOpen() {
   document.getElementById("drop-menu").classList.toggle("show");
   document.getElementById("drop-menu").classList.toggle("animate__fadeInLeft");
@@ -68,13 +69,52 @@ function menuClose() {
   setTimeout(toggleFaidOutLeft, 1000);
   setTimeout(toggleShow, 1000);
 }
-// language button
 
-function languagePopUp() {
+// language button
+function toggleLangShow() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
+function toggleFaidIn() {
+  document.getElementById("myDropdown").classList.toggle("animate__fadeIn");
+}
+function toggleFaidOut() {
+  document.getElementById("myDropdown").classList.remove("animate__fadeOut");
+}
+function languagePopUp() {
+  if (document.getElementById("myDropdown").classList.contains("show")) {
+    document.getElementById("myDropdown").classList.add("animate__fadeOut");
+    setTimeout(toggleFaidOut, 1000);
+    setTimeout(toggleLangShow, 1000);
+  } else {
+    document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById("myDropdown").classList.toggle("animate__fadeIn");
+    setTimeout(toggleFaidIn, 1000);
+  }
+}
 // Закрыть раскрывающийся список, если пользователь щелкнет за его пределами, сразу и кнопки языков и для кнопки меню.
-
+window.onclick = function (event) {
+  if (!event.target.matches(".dropbtn")) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains("show")) {
+        languagePopUp();
+      }
+    }
+  }
+  if (!event.target.matches(".btn-menu")) {
+    var dropMenu = document.getElementsByClassName("dropdown-content-menu");
+    var i;
+    for (i = 0; i < dropMenu.length; i++) {
+      var openDropMenu = dropMenu[i];
+      if (openDropMenu.classList.contains("show")) {
+        menuClose();
+      }
+    }
+  }
+};
+x``;
 // popUp
 const scrollController = {
   scrollTPosition: 0,
