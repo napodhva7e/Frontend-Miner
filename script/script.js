@@ -48,13 +48,25 @@ function clickHandler(e) {
 }
 
 // Menu button
-
+function toggleFaidInLeft() {
+  document.getElementById("drop-menu").classList.toggle("animate__fadeInLeft");
+}
+function toggleFaidOutLeft() {
+  document.getElementById("drop-menu").classList.remove("animate__fadeOutLeft");
+}
+function toggleShow() {
+  document.getElementById("drop-menu").classList.toggle("show");
+}
 function menuOpen() {
   document.getElementById("drop-menu").classList.toggle("show");
+  document.getElementById("drop-menu").classList.toggle("animate__fadeInLeft");
+  setTimeout(toggleFaidInLeft, 1000);
 }
 
 function menuClose() {
-  document.getElementById("drop-menu").classList.remove("show");
+  document.getElementById("drop-menu").classList.add("animate__fadeOutLeft");
+  setTimeout(toggleFaidOutLeft, 1000);
+  setTimeout(toggleShow, 1000);
 }
 // language button
 
@@ -62,29 +74,6 @@ function languagePopUp() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 // Закрыть раскрывающийся список, если пользователь щелкнет за его пределами, сразу и кнопки языков и для кнопки меню.
-
-window.onclick = function (event) {
-  if (!event.target.matches(".dropbtn")) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains("show")) {
-        openDropdown.classList.remove("show");
-      }
-    }
-  }
-  if (!event.target.matches(".btn-menu")) {
-    var dropMenu = document.getElementsByClassName("dropdown-content-menu");
-    var i;
-    for (i = 0; i < dropMenu.length; i++) {
-      var openDropMenu = dropMenu[i];
-      if (openDropMenu.classList.contains("show")) {
-        openDropMenu.classList.remove("show");
-      }
-    }
-  }
-};
 
 // popUp
 const scrollController = {
@@ -156,4 +145,3 @@ modalController({
 });
 
 //value Counter
-

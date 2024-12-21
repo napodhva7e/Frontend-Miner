@@ -58,7 +58,18 @@
 
 .show {
   display: inline-block;
-  transition: 1s ease-in-out;
+  transition: 2s ease-in-out;
+}
+@keyframes show-time {
+  from {
+    display: inline-block;
+  }
+  to {
+    display: none;
+  }
+}
+.close {
+  animation: show-time 2s ease;
 }
 
 @media (max-width: 1024px) {
