@@ -67,7 +67,6 @@ function menuOpen() {
 function menuClose() {
   document.getElementById("drop-menu").classList.add("animate__fadeOutLeft");
   setTimeout(toggleFaidOutLeft, 1000);
-  setTimeout(toggleShow, 1000);
 }
 
 // language button
@@ -110,11 +109,12 @@ window.onclick = function (event) {
       var openDropMenu = dropMenu[i];
       if (openDropMenu.classList.contains("show")) {
         menuClose();
+        setTimeout(toggleShow, 1000);
       }
     }
   }
 };
-x``;
+
 // popUp
 const scrollController = {
   scrollTPosition: 0,
