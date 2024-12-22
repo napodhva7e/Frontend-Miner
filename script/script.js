@@ -47,28 +47,6 @@ function clickHandler(e) {
   });
 }
 
-// Menu button
-function toggleFaidInLeft() {
-  document.getElementById("drop-menu").classList.toggle("animate__fadeInLeft");
-}
-function toggleFaidOutLeft() {
-  document.getElementById("drop-menu").classList.remove("animate__fadeOutLeft");
-}
-function toggleShow() {
-  document.getElementById("drop-menu").classList.toggle("show");
-}
-
-function menuOpen() {
-  document.getElementById("drop-menu").classList.toggle("show");
-  document.getElementById("drop-menu").classList.toggle("animate__fadeInLeft");
-  setTimeout(toggleFaidInLeft, 1000);
-}
-
-function menuClose() {
-  document.getElementById("drop-menu").classList.add("animate__fadeOutLeft");
-  setTimeout(toggleFaidOutLeft, 1000);
-}
-
 // language button
 function toggleLangShow() {
   document.getElementById("myDropdown").classList.toggle("show");
@@ -99,17 +77,6 @@ window.onclick = function (event) {
       var openDropdown = dropdowns[i];
       if (openDropdown.classList.contains("show")) {
         languagePopUp();
-      }
-    }
-  }
-  if (!event.target.matches(".btn-menu")) {
-    var dropMenu = document.getElementsByClassName("dropdown-content-menu");
-    var i;
-    for (i = 0; i < dropMenu.length; i++) {
-      var openDropMenu = dropMenu[i];
-      if (openDropMenu.classList.contains("show")) {
-        menuClose();
-        setTimeout(toggleShow, 1000);
       }
     }
   }
