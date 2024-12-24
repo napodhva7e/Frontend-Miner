@@ -75,6 +75,7 @@ a {
   height: 23px;
 }
 .header-nav {
+  justify-content: space-around;
 }
 
 .nav--link {
