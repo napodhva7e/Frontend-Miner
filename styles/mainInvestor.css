@@ -172,8 +172,8 @@ details {
   color: var(--accent-text-light);
   font-size: clamp(14px, 1.5vw, 22px);
   font-weight: 300;
+  transition: 1s ease-in-out;
 }
-
 summary {
   cursor: pointer;
   text-transform: uppercase;
@@ -217,6 +217,44 @@ details[open] > summary img {
 }
 .span-italic.FAQ-span-italic {
   color: var(--accent-light);
+}
+
+/* new faq */
+.details {
+  position: relative;
+  display: block;
+  /* max-width: 650px; */
+  /* margin: 0 auto 10px; */
+  /* background-color: transparent; */
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.details[open] {
+  padding-bottom: 20px;
+}
+
+.details[open] .details__title {
+  margin-bottom: 32px;
+}
+
+.details__title {
+  transition: 0.5s;
+}
+
+.details__title::-webkit-details-marker {
+  display: none;
+}
+
+.details__content {
+  margin-bottom: -60px;
+}
+
+.details__content p:last-child {
+  margin-bottom: 0;
+}
+.details__content p:first-child {
+  margin-top: 0;
 }
 
 /* ADVANTAGE WORK */
